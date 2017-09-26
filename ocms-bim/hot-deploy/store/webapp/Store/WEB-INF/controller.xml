@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <!-- The controller elements that are common to all OFBiz components
+         can be found in the following xml file. A component can override the
+         elements found in the common-controller.xml file. -->
+    <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+
+    <description>Store Component Site Configuration File</description>
+    <owner></owner>
+
+	<handler name="java" type="request" class="org.ofbiz.webapp.event.JavaEventHandler"/>
+  	<handler name="json" type="request" class="org.ofbiz.commondefine.comm.JsonHandler"/> 
+  	<handler name="jsonMap" type="request" class="org.ofbiz.commondefine.comm.JsonHandler"/> 
+
+    <!-- Events to run on every request before security (chains exempt) -->
+    <!--
+    <preprocessor>
+    </preprocessor>
+    -->
+    <!-- Events to run on every request after all other processing (chains exempt) -->
+    <!--
+    <postprocessor>
+        <event name="test" type="java" path="org.ofbiz.webapp.event.TestEvent" invoke="test"/>
+    </postprocessor>
+    -->
+
+
+    <request-map uri="checkLogin" edit="false">
+        <description>Verify a user is logged in.</description>
+        <security https="true" auth="false"/>
+        <event type="java" path="org.ofbiz.commondefine.events.LoginEvents" invoke="validateToken" />
+        <response name="success" type="none"/>
+        <response name="error" type="view" value="login" />
+    </request-map>
+    
+    
+    <!-- Request Mappings -->
+    <request-map uri="main">
+    	<security https="true" auth="true"/>
+    	<response name="success" type="view" value="main"/>
+    </request-map>
+    
+    
+    <request-map uri="authview"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+	
+    <!-- ================ Product Store Requests ============= -->
+    
+    <request-map uri="findGeo">
+    	<security https="false" auth="false"/>
+        <event type="jsonMap" path="org.ofbiz.ordermgr.StoreAddressServices" invoke="findGeo"/>
+        <response name="success" type="none"/>
+        <response name="error" type="none"/>
+    </request-map>
+    <!-- 更新店铺地址 -->
+    <request-map uri="updateStoreAddress">
+    	<security https="true" auth="true"/>
+        <event type="jsonMap" path="org.ofbiz.ordermgr.StoreAddressServices" invoke="updateStoreAddress"/>
+        <response name="success" type="none"/>
+        <response name="error" type="none"/>
+    </request-map>
+    
+    <request-map uri="FindProductStore">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindProductStore"/>
+    </request-map>
+    <request-map uri="EditProductStore">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStore"/>
+    </request-map>
+    <request-map uri="createProductStore">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStore"/>
+        <response name="success" type="view" value="EditProductStore"/>
+        <response name="error" type="view" value="EditProductStore"/>
+    </request-map>
+    <request-map uri="updateProductStore">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateProductStore"/>
+        <response name="success" type="view" value="EditProductStore"/>
+        <response name="error" type="view" value="EditProductStore"/>
+    </request-map>
+    
+    <!-- ================ ProductStore WebSite Requests ================= -->
+    <request-map uri="EditProductStoreWebSites">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreWebSites"/>
+    </request-map>
+    <request-map uri="storeUpdateWebSite">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateWebSite"/>
+        <response name="success" type="view" value="EditProductStoreWebSites"/>
+        <response name="error" type="view" value="EditProductStoreWebSites"/>
+    </request-map>
+   
+    <!-- ================ ProductPromo Requests ================= -->
+    <request-map uri="FindProductPromo">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindProductPromo"/>
+    </request-map>
+
+    <request-map uri="EditProductPromo">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductPromo"/>
+    </request-map>
+    <request-map uri="createProductPromo">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProductPromo"/>
+        <response name="success" type="view" value="EditProductPromo"/>
+        <response name="error" type="view" value="EditProductPromo"/>
+    </request-map>
+    <request-map uri="updateProductPromo">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProductPromo"/>
+        <response name="success" type="view" value="EditProductPromo"/>
+        <response name="error" type="view" value="EditProductPromo"/>
+    </request-map>
+   
+    <!-- ================ ProdCatalog Requests ================= -->
+    <request-map uri="FindProdCatalog">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindProdCatalog"/>
+    </request-map>
+
+    <request-map uri="EditProdCatalog">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProdCatalog"/>
+    </request-map>
+    <request-map uri="createProdCatalog">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProdCatalog"/>
+        <response name="success" type="view" value="EditProdCatalog"/>
+        <response name="error" type="view" value="EditProdCatalog"/>
+    </request-map>
+    <request-map uri="updateProdCatalog">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProdCatalog"/>
+        <response name="success" type="view" value="EditProdCatalog"/>
+        <response name="error" type="view" value="EditProdCatalog"/>
+    </request-map>
+   
+     <!-- ================ ProductStore Role Requests ================= -->
+    <request-map uri="FindProductStoreRoles">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindProductStoreRoles"/>
+    </request-map>
+    <request-map uri="storeCreateRole">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreRole"/>
+        <response name="success" type="view" value="FindProductStoreRoles"/>
+        <response name="error" type="view" value="FindProductStoreRoles"/>
+    </request-map>
+    <request-map uri="storeUpdateRole">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateProductStoreRole"/>
+        <response name="success" type="view" value="FindProductStoreRoles"/>
+        <response name="error" type="view" value="FindProductStoreRoles"/>
+    </request-map>
+    <request-map uri="storeRemoveRole">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="removeProductStoreRole"/>
+        <response name="success" type="view" value="FindProductStoreRoles"/>
+        <response name="error" type="view" value="FindProductStoreRoles"/>
+    </request-map>
+    
+    
+
+ <!-- ================ ProductStore Promos Requests ================= -->
+    <request-map uri="EditProductStorePromos">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStorePromos"/>
+    </request-map>
+    <request-map uri="createProductStorePromoAppl">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProductStorePromoAppl"/>
+        <response name="success" type="view" value="EditProductStorePromos"/>
+        <response name="error" type="view" value="EditProductStorePromos"/>
+    </request-map>
+    <request-map uri="updateProductStorePromoAppl">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProductStorePromoAppl"/>
+        <response name="success" type="view" value="EditProductStorePromos"/>
+        <response name="error" type="view" value="EditProductStorePromos"/>
+    </request-map>
+    <request-map uri="deleteProductStorePromoAppl">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="deleteProductStorePromoAppl"/>
+        <response name="success" type="view" value="EditProductStorePromos"/>
+        <response name="error" type="view" value="EditProductStorePromos"/>
+    </request-map>
+    
+    <!-- ================ ProductStore ProdCatalogs Requests ================= -->
+    <request-map uri="EditProductStoreCatalogs">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreCatalogs"/>
+    </request-map>
+    <request-map uri="createProductStoreCatalog">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProductStoreCatalog"/>
+        <response name="success" type="view" value="EditProductStoreCatalogs"/>
+        <response name="error" type="view" value="EditProductStoreCatalogs"/>
+    </request-map>
+    <request-map uri="updateProductStoreCatalog">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProductStoreCatalog"/>
+        <response name="success" type="view" value="EditProductStoreCatalogs"/>
+        <response name="error" type="view" value="EditProductStoreCatalogs"/>
+    </request-map>
+    <request-map uri="deleteProductStoreCatalog">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="deleteProductStoreCatalog"/>
+        <response name="success" type="view" value="EditProductStoreCatalogs"/>
+        <response name="error" type="view" value="EditProductStoreCatalogs"/>
+    </request-map>
+     
+      <!-- ================ ProductStore Payment Requests ================= -->
+    <request-map uri="EditProductStorePaySetup">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStorePaySetup"/>
+    </request-map>
+    <request-map uri="storeCreatePaySetting">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStorePaymentSetting"/>
+        <response name="success" type="view" value="EditProductStorePaySetup"/>
+        <response name="error" type="view" value="EditProductStorePaySetup"/>
+    </request-map>
+    <request-map uri="storeUpdatePaySetting">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateProductStorePaymentSetting"/>
+        <response name="success" type="view" value="EditProductStorePaySetup"/>
+        <response name="error" type="view" value="EditProductStorePaySetup"/>
+    </request-map>
+    <request-map uri="storeRemovePaySetting">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="deleteProductStorePaymentSetting"/>
+        <response name="success" type="view" value="EditProductStorePaySetup"/>
+        <response name="error" type="view" value="EditProductStorePaySetup"/>
+    </request-map>
+    
+     <!-- ================ ProductStore Shipping Requests ================= -->
+    <request-map uri="EditProductStoreShipSetup">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreShipSetup"/>
+    </request-map>
+    <request-map uri="EditProductStoreShipmentCostEstimates">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreShipmentCostEstimates"/>
+    </request-map>
+    <request-map uri="storeCreateShipRate">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createShipmentEstimate"/>
+        <response name="success" type="view" value="EditProductStoreShipmentCostEstimates"/>
+        <response name="error" type="view" value="EditProductStoreShipmentCostEstimates"/>
+    </request-map>
+    <request-map uri="storeRemoveShipRate">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="removeShipmentEstimate"/>
+        <response name="success" type="view" value="EditProductStoreShipmentCostEstimates"/>
+        <response name="error" type="view" value="EditProductStoreShipmentCostEstimates"/>
+    </request-map>
+    <request-map uri="prepareCreateShipMeth">
+        <security https="true" auth="true"/>
+        <event type="groovy" path="component://product/webapp/catalog/store/" invoke="prepareCreateShipMeth.groovy"/>
+        <response name="success" type="view" value="EditProductStoreShipSetup"/>
+        <response name="error" type="view" value="EditProductStoreShipSetup"/>
+    </request-map>
+    <request-map uri="storeCreateShipMeth">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreShipMeth"/>
+        <response name="success" type="view" value="EditProductStoreShipSetup"/>
+        <response name="error" type="view" value="EditProductStoreShipSetup"/>
+    </request-map>
+    <request-map uri="storeUpdateShipMeth">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateProductStoreShipMeth"/>
+        <response name="success" type="view" value="EditProductStoreShipSetup"/>
+        <response name="error" type="view" value="EditProductStoreShipSetup"/>
+    </request-map>
+    <request-map uri="storeRemoveShipMeth">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="removeProductStoreShipMeth"/>
+        <response name="success" type="view" value="EditProductStoreShipSetup"/>
+        <response name="error" type="view" value="EditProductStoreShipSetup"/>
+    </request-map>
+    
+    <!-- ================ ProductStore FinAccount Settings ================ -->
+    <request-map uri="EditProductStoreFinAccountSettings">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreFinAccountSettings"/>
+    </request-map>
+    <request-map uri="CreateProductStoreFinAccountSettings">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreFinActSetting"/>
+        <response name="success" type="view" value="EditProductStoreFinAccountSettings"/>
+        <response name="error" type="view" value="EditProductStoreFinAccountSettings"/>
+    </request-map>
+    <request-map uri="UpdateProductStoreFinAccountSettings">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="updateProductStoreFinActSetting"/>
+        <response name="success" type="view" value="EditProductStoreFinAccountSettings"/>
+        <response name="error" type="view" value="EditProductStoreFinAccountSettings"/>
+    </request-map>
+    <request-map uri="RemoveProductStoreFinAccountSettings">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="removeProductStoreFinActSetting"/>
+        <response name="success" type="view" value="EditProductStoreFinAccountSettings"/>
+        <response name="error" type="view" value="EditProductStoreFinAccountSettings"/>
+    </request-map>
+    
+    <!-- ================ ProductStore Survey Requests ================= -->
+    <request-map uri="EditProductStoreSurveys">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreSurveys"/>
+    </request-map>
+    <request-map uri="createProductStoreSurveyAppl">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreSurveyAppl"/>
+        <response name="success" type="view" value="EditProductStoreSurveys"/>
+    </request-map>
+    <request-map uri="deleteProductStoreSurveyAppl">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="deleteProductStoreSurveyAppl"/>
+        <response name="success" type="view" value="EditProductStoreSurveys"/>
+    </request-map>
+    
+    <!-- ================ ProductStore Email Requests ================= -->
+    <request-map uri="EditProductStoreEmails">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreEmails"/>
+    </request-map>
+    <request-map uri="createProductStoreEmail">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProductStoreEmailSetting"/>
+        <response name="success" type="view" value="EditProductStoreEmails"/>
+        <response name="error" type="view" value="EditProductStoreEmails"/>
+    </request-map>
+    <request-map uri="updateProductStoreEmail">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProductStoreEmailSetting"/>
+        <response name="success" type="view" value="EditProductStoreEmails"/>
+        <response name="error" type="view" value="EditProductStoreEmails"/>
+    </request-map>
+    <request-map uri="removeProductStoreEmail">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="removeProductStoreEmailSetting"/>
+        <response name="success" type="view" value="EditProductStoreEmails"/>
+        <response name="error" type="view" value="EditProductStoreEmails"/>
+    </request-map>
+    
+     <!-- ================ Product Store Keyword Override ============= -->
+    <request-map uri="editProductStoreKeywordOvrd">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreKeywordOvrd"/>
+    </request-map>
+    <request-map uri="createProductStoreKeywordOvrd">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="createProductStoreKeywordOvrd"/>
+        <response name="success" type="view" value="EditProductStoreKeywordOvrd"/>
+        <response name="error" type="view" value="EditProductStoreKeywordOvrd"/>
+    </request-map>
+    <request-map uri="updateProductStoreKeywordOvrd">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="updateProductStoreKeywordOvrd"/>
+        <response name="success" type="view" value="EditProductStoreKeywordOvrd"/>
+        <response name="error" type="view" value="EditProductStoreKeywordOvrd"/>
+    </request-map>
+    <request-map uri="deleteProductStoreKeywordOvrd">
+        <security https="true" auth="true"/>
+        <event type="service" path="" invoke="deleteProductStoreKeywordOvrd"/>
+        <response name="success" type="view" value="EditProductStoreKeywordOvrd"/>
+        <response name="error" type="view" value="EditProductStoreKeywordOvrd"/>
+    </request-map>
+    
+    <!-- ================ ProductStore Segment Requests ================= -->
+    <request-map uri="ViewProductStoreSegments">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="ViewProductStoreSegments"/>
+    </request-map>
+    
+      <!-- ================ ProductStore Vendor Payment Requests =========== -->
+    <request-map uri="EditProductStoreVendorPayments">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreVendorPayments"/>
+    </request-map>
+    <request-map uri="createProductStoreVendorPayment">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreVendorPayment"/>
+        <response name="success" type="view" value="EditProductStoreVendorPayments"/>
+        <response name="error" type="view" value="EditProductStoreVendorPayments"/>
+    </request-map>
+    <request-map uri="deleteProductStoreVendorPayment">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="deleteProductStoreVendorPayment"/>
+        <response name="success" type="view" value="EditProductStoreVendorPayments"/>
+        <response name="error" type="view" value="EditProductStoreVendorPayments"/>
+    </request-map>
+    
+      <!-- ================ Lookup Requests ================= -->
+    <request-map uri="LookupContent"><security auth="true" https="true"/><response name="success" type="view" value="LookupContent"/></request-map>
+    <request-map uri="LookupFixedAsset"><security auth="true" https="true"/><response name="success" type="view" value="LookupFixedAsset"/></request-map>
+    <request-map uri="LookupPartyName"><security auth="true" https="true"/><response name="success" type="view" value="LookupPartyName"/></request-map>
+    <request-map uri="LookupGeo"><security auth="true" https="true"/><response name="success" type="view" value="LookupGeo"/></request-map>
+    <request-map uri="LookupOrderHeader"><security auth="true" https="true"/><response name="success" type="view" value="LookupOrderHeader"/></request-map>
+    <request-map uri="LookupCommEvent"><security auth="true" https="true"/><response name="success" type="view" value="LookupCommEvent"/></request-map>
+
+    <request-map uri="LookupProduct"><security auth="true" https="true"/><response name="success" type="view" value="LookupProduct"/></request-map>
+    <request-map uri="LookupSupplierProduct"><security auth="true" https="true"/><response name="success" type="view" value="LookupSupplierProduct"/></request-map>
+    <request-map uri="LookupVariantProduct"><security auth="true" https="true"/><response name="success" type="view" value="LookupVariantProduct"/></request-map>
+    <request-map uri="LookupVirtualProduct"><security auth="true" https="true"/><response name="success" type="view" value="LookupVirtualProduct"/></request-map>
+    <request-map uri="LookupProductCategory"><security auth="true" https="true"/><response name="success" type="view" value="LookupProductCategory"/></request-map>
+    <request-map uri="LookupProductFeature"><security auth="true" https="true"/><response name="success" type="view" value="LookupProductFeature"/></request-map>
+    <request-map uri="LookupProductStore"><security auth="true" https="true"/><response name="success" type="view" value="LookupProductStore"/></request-map>
+    <request-map uri="LookupFacilityLocation"><security auth="true" https="true"/><response name="success" type="view" value="LookupFacilityLocation"/></request-map>
+    <request-map uri="LookupWorkEffort"><security https="true" auth="true"/><response name="success" type="view" value="LookupWorkEffort"/></request-map>
+    <request-map uri="LookupDataResource"><security auth="true" https="true"/><response name="success" type="view" value="LookupDataResource"/></request-map>
+    <request-map uri="LookupPerson"><security auth="true" https="true"/><response name="success" type="view" value="LookupPerson"/></request-map>
+    <request-map uri="LookupPreferredContactMech"><security https="true" auth="true"/><response name="success" type="view" value="LookupPreferredContactMech"/></request-map>
+    <request-map uri="LookupContactList"><security https="true" auth="true"/><response name="success" type="view" value="LookupContactList"/></request-map>
+    
+     <!-- ================ ProductStore Vendor Shipment Requests =========== -->
+    <request-map uri="EditProductStoreVendorShipments">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditProductStoreVendorShipments"/>
+    </request-map>
+    <!-- Address -->
+    <request-map uri="EditStoreAddress">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="EditStoreAddress"/>
+    </request-map>
+    <request-map uri="createProductStoreVendorShipment">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createProductStoreVendorShipment"/>
+        <response name="success" type="view" value="EditProductStoreVendorShipments"/>
+        <response name="error" type="view" value="EditProductStoreVendorShipments"/>
+    </request-map>
+    <request-map uri="deleteProductStoreVendorShipment">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="deleteProductStoreVendorShipment"/>
+        <response name="success" type="view" value="EditProductStoreVendorShipments"/>
+        <response name="error" type="view" value="EditProductStoreVendorShipments"/>
+    </request-map>
+    <!-- View Mappings -->
+    <view-map name="main" type="screen" page="component://store/widget/CommonScreens.xml#main"/>
+    <view-map name="FindProductStore" type="screen" page="component://store/widget/store/StoreScreens.xml#FindProductStore"/>
+    <view-map name="EditProductStore" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStore"/>
+    <view-map name="FindProductStoreRoles" type="screen" page="component://product/widget/catalog/StoreScreens.xml#FindProductStoreRoles"/>
+    <view-map name="EditProductStorePromos" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStorePromos"/>
+    <view-map name="EditProductStoreCatalogs" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreCatalogs"/>
+    <view-map name="EditProductStorePaySetup" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStorePaySetup"/>
+    <view-map name="EditProductStoreShipSetup" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreShipSetup"/>
+    <view-map name="EditProductStoreWebSites" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreWebSites"/>
+    <view-map name="EditProductStoreShipmentCostEstimates" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreShipmentCostEstimates"/>
+    <view-map name="EditProductStoreFinAccountSettings" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreFinAccountSettings"/>
+    <view-map name="EditProductStoreSurveys" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreSurveys"/>
+    <view-map name="EditProductStoreEmails" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreEmails"/>
+    <view-map name="EditProductStoreKeywordOvrd" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreKeywordOvrd"/>
+    <view-map name="ViewProductStoreSegments" type="screen" page="component://product/widget/catalog/StoreScreens.xml#ViewProductStoreSegments"/>
+    <view-map name="EditProductStoreVendorPayments" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreVendorPayments"/>
+    <view-map name="EditProductStoreVendorShipments" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditProductStoreVendorShipments"/>
+    
+    <!-- Lookup request mappings -->
+    <view-map name="LookupContent" page="component://content/widget/content/ContentScreens.xml#LookupContent" type="screen"/>
+    <view-map name="LookupFixedAsset" type="screen" page="component://accounting/widget/LookupScreens.xml#LookupFixedAsset"/>
+    <view-map name="LookupPartyName" type="screen" page="component://party/widget/partymgr/LookupScreens.xml#LookupPartyName"/>
+    <view-map name="LookupGeo" type="screen" page="component://common/widget/LookupScreens.xml#LookupGeo"/>
+    <view-map name="LookupOrderHeader" type="screen" page="component://order/widget/ordermgr/LookupScreens.xml#LookupOrderHeader"/>
+    <view-map name="LookupCommEvent" type="screen" page="component://party/widget/partymgr/LookupScreens.xml#LookupCommEvent"/>
+
+    <view-map name="LookupProduct" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupProduct"/>
+    <view-map name="LookupSupplierProduct" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupSupplierProduct"/>
+    <view-map name="LookupVariantProduct" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupVariantProduct"/>
+    <view-map name="LookupVirtualProduct" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupVirtualProduct"/>
+    <view-map name="LookupProductCategory" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupProductCategory"/>
+    <view-map name="LookupProductFeature" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupProductFeature"/>
+    <view-map name="LookupProductStore" type="screen" page="component://product/widget/catalog/LookupScreens.xml#LookupProductStore"/>
+    <view-map name="LookupFacilityLocation" page="component://product/widget/facility/LookupScreens.xml#LookupFacilityLocation" type="screen"/>
+    <view-map name="LookupWorkEffort" type="screen" page="component://workeffort/widget/LookupScreens.xml#LookupWorkEffort"/>
+    <view-map name="LookupDataResource" page="component://content/widget/content/DataResourceScreens.xml#LookupDataResource" type="screen"/>
+    <view-map name="LookupPerson" page="component://party/widget/partymgr/LookupScreens.xml#LookupPerson" type="screen"/>
+    <view-map name="LookupPreferredContactMech" type="screen" page="component://marketing/widget/ContactListScreens.xml#LookupPreferredContactMech"/>
+    <view-map name="LookupContactList" type="screen" page="component://party/widget/partymgr/PartyContactListScreens.xml#ListLookupContactList"/>
+    <view-map name="EditProdCatalog" type="screen" page="component://product/widget/catalog/CatalogScreens.xml#EditProdCatalog"/>
+    <view-map name="FindProdCatalog" type="screen" page="component://product/widget/catalog/CatalogScreens.xml#FindProdCatalog"/>
+	
+	<view-map name="FindProductPromo" type="screen" page="component://product/widget/catalog/PromoScreens.xml#FindProductPromo"/>
+    <view-map name="EditProductPromo" type="screen" page="component://product/widget/catalog/PromoScreens.xml#EditProductPromo"/>
+    <view-map name="EditProductPromoRules" type="screen" page="component://product/widget/catalog/PromoScreens.xml#EditProductPromoRules"/>
+    <view-map name="EditProductPromoStores" type="screen" page="component://product/widget/catalog/PromoScreens.xml#EditProductPromoStores"/>
+    <view-map name="FindProductPromoCode" type="screen" page="component://product/widget/catalog/PromoScreens.xml#FindProductPromoCode"/>
+    <view-map name="EditProductPromoCode" type="screen" page="component://product/widget/catalog/PromoScreens.xml#EditProductPromoCode"/>
+    <view-map name="EditProductPromoContent" type="screen" page="component://product/widget/catalog/PromoScreens.xml#EditProductPromoContent"/>
+	<view-map name="EditStoreAddress" type="screen" page="component://product/widget/catalog/StoreScreens.xml#EditStoreAddress"/>
+	<view-map name="login" type="screen" page="component://commondefine/widget/CommonScreens.xml#lgoin"/>
+
+</site-conf>

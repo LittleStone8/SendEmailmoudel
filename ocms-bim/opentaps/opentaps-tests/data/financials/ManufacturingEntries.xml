@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) Open Source Strategies, Inc.
+ *
+ * Opentaps is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Opentaps is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Opentaps.  If not, see <http://www.gnu.org/licenses/>.
+ *
+-->
+
+<entity-engine-xml>
+
+    <!-- These transactions correspond to the following:
+    create a production run for 2 of PROD_COST
+    confirm the production run
+    call issueProductionRunRoutingTask on the first production run task
+    call changeProductionRunTaskStatus to completed
+    call productionRunProduce to stock in the 2 items as non-serialized -->
+
+
+    <!-- These transactions correspond to the following:
+    create a disassembly for 2 of PROD_COST
+    confirm the production run
+    call issueProductionRunRoutingTask on the first production run task
+    call changeProductionRunTaskStatus to completed
+    call productionRunProduce to stock in MAT_A_COST and MAT_B_COST end products as non-serialized -->
+
+    <!-- These transactions correspond to the following:
+    create a production run for 1 of PROD_COST
+    confirm the production run
+    call issueProductionRunRoutingTask on the first task
+    declare the task with 1,000,000 milliseconds for actual set up time and 800,000 milliseconds of actual task time
+    call changeProductionRunTaskStatus to completed
+    call productionRunProduce to stock the PROD_COST
+    -->
+
+  
+
+</entity-engine-xml>

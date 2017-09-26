@@ -1,0 +1,31 @@
+{
+	"title":"gulp compress css/js/image",
+	"jsroot":[
+		"opentaps/opentaps-common/webapp/js",
+		"framework/images/webapp/images/dojo/src",
+		"opentaps/opentaps-common/webapp/commongwt",
+		"opentaps/opentaps-common/webapp/crmsfagwt",
+		"opentaps/opentaps-common/webapp/financialsgwt",
+		"opentaps/opentaps-common/webapp/purchasinggwt",
+		"opentaps/opentaps-common/webapp/warehousegwt",
+		"hot-deploy/ordermgr/webapp/crmsfagwt"
+	],
+	"cssroot":[
+		"opentaps/opentaps-common/webapp/js",
+		"framework/images/webapp/images/dojo/src",
+		"opentaps/opentaps-common/webapp/commongwt",
+		"opentaps/opentaps-common/webapp/crmsfagwt",
+		"opentaps/opentaps-common/webapp/financialsgwt",
+		"opentaps/opentaps-common/webapp/purchasinggwt",
+		"opentaps/opentaps-common/webapp/warehousegwt",
+		"hot-deploy/ordermgr/webapp/crmsfagwt"
+	],
+	"imageroot":[
+		"opentaps/opentaps-common/webapp/images",
+		"framework/images/webapp/images"
+	],
+	"imagebackuproot":"./imagebackup/",
+	"backupjs":"false",
+	"backupcss":"false",
+	"backupimage":"false"
+}

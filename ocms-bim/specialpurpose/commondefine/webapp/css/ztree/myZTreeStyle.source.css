@@ -1,0 +1,40 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.4
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+.ztree .clear:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.ztree .clear{ zoom:1; }
+.ztree .fleft{float:left; }
+.ztree .fright{float:right; }
+.ztree li{vertical-align:bottom/*ie7 bug*/;}
+.ztree,.ztree ul,.ztree li{padding: 0px;margin: 0px;display: block;width: 100%;}
+.ztree table{border-collapse:collapse;width:100%;border-spacing:0;border: 1px solid #bcbcbc;}
+.ztree .tableA{display: block;width: 100%;color: black;text-decoration:none;cursor: default;}
+.ztree .tableA:hover{background-color: #fafafa;}
+.ztree a.tableA:focus {outline:none!important;}
+.ztree table td{text-align:center;padding: 10px;}
+.ztree .td1{width:40%;}
+.ztree td.cline{border-left: 1px solid #bcbcbc;border-right: 1px solid #bcbcbc;}
+.ztree .td2{width:10%;}
+.ztree .td3{width:10%;}
+.ztree .td4{width:10%;}
+.ztree .td5{width:10%;}
+.ztree .td6{width:10%;}
+.ztree .td7{width:10%;}
+.ztree .ztitle td{background-color: #fafafa;height: 40px;}
+.ztree .ztitle .td1 .box{position: relative;width: 100%;height: 100%;}
+.ztree .ztitle .td1 .plb{position: absolute;left:40px;bottom: 0px;white-space: nowrap;}
+.ztree .ztitle .td1 .ptr{position: absolute;right:40px;top: 0px;white-space: nowrap;}
+.ztree .data {border-top:0px none;}
+.ztree .data .td1{text-align: left;}
+.ztree .data .break{white-space: normal;word-wrap: break-word;word-break: break-all;}
+.ztree .data .switch{cursor: pointer; text-align:left;}
+.ztree .data .switch{background:no-repeat 10px center; padding-left: 25px; }
+.ztree .data .center_open{background-image:url(./img/show.png); }
+.ztree .data .center_close {background-image:url(./img/hide.png); }
+.ztree .data .center_docu {background-image:url(./img/child.png); }

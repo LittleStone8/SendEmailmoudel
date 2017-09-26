@@ -1,0 +1,26 @@
+import org.ofbiz.base.component.ComponentConfig;
+import javolution.util.FastList;
+import javolution.util.FastMap;
+import org.opentaps.domain.DomainsLoader;
+import org.opentaps.foundation.infrastructure.Infrastructure;
+import org.opentaps.foundation.infrastructure.User;
+
+// security
+security = request.getAttribute("security");
+context.put("security", security);
+
+// external login key
+//extLogin = request.getAttribute("externalLoginKey");
+//if (extLogin != null) {
+//    context.put("externalKeyParam", "externalLoginKey=" + requestAttributes.get("externalLoginKey"));
+//}
+//org.ofbiz.base.util.Debug.log("userLogin : " + userLogin);
+
+
+
+user = userLogin==null ? null : new User(userLogin, delegator);
+domainsLoader = new DomainsLoader(new Infrastructure(dispatcher), user);
+webAppDomain = domainsLoader.loadDomainsDirectory().getWebAppDomain();
+webAppRepository = webAppDomain.getWebAppRepository();
+apps = webAppRepository.getWebApps(user);
+context.put("apps", apps);

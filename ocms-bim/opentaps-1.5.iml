@@ -1,0 +1,2448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/applications/content/lib/lucene-core-2.4.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/applications/content/lib/poi-3.2-FINAL-20081019.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant-junit-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant-launcher-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant-trax-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant/ant-apache-bsf-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ant/ant-nodeps-1.7.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/antisamy-bin.1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/avalon-framework-4.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/avalon-util-exception-1.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/barcode4j-fop-ext-complete-2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/batik-all-1.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/clhm-20100316.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/hamcrest-all-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/fop-0.95.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/freemarker-2.3.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/httpclient-4.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/httpcore-4.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/httpunit.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/ical4j-1.0-rc2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/icu4j-4_4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/jakarta-regexp-1.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/javolution-5.4.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/jcip-annotations-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/jdbm-1.0-SNAPSHOT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/jdom-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/jpim-0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/juel-2.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/junit.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/junitperf.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/log4j-1.2.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/mail.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/mx4j-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/mx4j-remote-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/nekohtml.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/owasp-esapi-full-java-1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/resolver-2.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/serializer-2.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/Tidy.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xercesImpl-2.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xml-apis-2.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xml-apis-ext-1.3.04.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xmlgraphics-commons-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xstream-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/xpp3_min-1.1.4c.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-beanutils-1.7.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-cli-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-codec-1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-collections-3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-digester-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-discovery-0.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-el-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-fileupload-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-io-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-lang-2.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-logging-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-modeler-2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-net-1.4.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-pool-1.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-primitives-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-validator-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/commons/commons-vfs-20070730.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-activation_1.0.2_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-j2ee-connector_1.5_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jaxr_1.0_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jaxrpc_1.1_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jms_1.1_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-qname_1.1_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-saaj_1.1_spec-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-annotations-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-el-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-jsp-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-servlet-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/antlr-2.7.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-analysis-3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-tree-3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-util-3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/bsf-2.4.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/bsh-2.0b4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/groovy-1.7-rc-2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/jakarta-oro-2.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/scripting/jython-nooro.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/chartengineapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/chartitemapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/coreapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/crosstabcoreapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/dataadapterapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/dataaggregationapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/dataextraction.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/dteapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/emitterconfig.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/engineapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/jaxrpc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/modelapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/modelodaapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/odadesignapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/saaj.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/scriptapi.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/birt/lib/viewservlets.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina-ha.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina-tribes.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper-el.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper-jdt.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-coyote.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-dbcp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-juli.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-juli-adapters.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/entity/lib/commons-dbcp-1.3-20091113-r835956.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/entity/lib/ofbiz-minerva.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/geronimo/lib/geronimo-connector-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/geronimo/lib/geronimo-transaction-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/guiapp/lib/XuiCoreSwing-v3.2rc2b.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/guiapp/lib/XuiOptional-v3.2rc2b.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jasper-compiler-5.5.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jasper-runtime-5.5.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jetty-6.1.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jetty-ajp-6.1.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jetty-sslengine-6.1.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/jetty/lib/jetty-util-6.1.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axis.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axis-ant.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/wsdl4j.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axiom-api-1.2.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axiom-impl-1.2.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axis2-kernel-1.5.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axis2-transport-http-1.5.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/axis2-transport-local-1.5.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/commons-httpclient-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/neethi-2.0.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/service/lib/XmlSchema-1.4.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/testtools/lib/selenium-java-client-driver.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/DataVision-1.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/ezmorph-0.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/json-lib-2.2.3-jdk15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/rome-0.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/velocity-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/ws-commons-java5-1.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/ws-commons-util-1.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-client-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-common-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-server-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/webslinger-base-invoker-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-cache-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-collections-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-collections-arrays-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-concurrent-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-html-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-io-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-javacc-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-junit-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-lang-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-logging-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-resolver-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-util-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-xml-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-catalina-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-cgi-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-embryo-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-beanshell-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-bsf-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-code-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-commonsvfs-object-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-directory-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-freemarker-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-groovy-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-image-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-janino-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-jruby-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-jython-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-nutch-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-plan9-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-quercus-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-rhino-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-servlet-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-template-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-velocity-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-wiki-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-launcher-20091211-3897-7ab22baea4b6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/googlecheckout/lib/checkout-sdk-0.8.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/ldap/lib/cas-server-core-3.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/pos/lib/jcl.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/pos/lib/jpos18-controls.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/pos/lib/looks-2.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/attributes.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/ebaycalls.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/ebaysdkcore.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/helper.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/ejb3-persistence.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-3.3.2.GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-annotations-3.4.0.GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-commons-annotations-3.4.0.GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-search-3.1.1.GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwt-user-2.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwtext.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwtextux.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jfreechart-1.0.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jcommon-1.0.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/inflector-0.7.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/aspectwerkz/aspectwerkz-2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/aspectwerkz/aspectwerkz-core-2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jetm.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentapsFedEx_RateService_Axis-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-beans-2.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-context-2.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-core-2.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentaps-common-entities.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentaps-common-services.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/lucene-core-2.4.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/iText-2.1.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/webapp/lib/jasperreports-3.5.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/asterisk/lib/asterisk-java-0.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-core-3.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-db-3.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-engine-3.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/opentaps/amazon/lib/opentapsAmazon_Axis-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/framework/base/lib/memcached-2.5.jar!/" />
+    <src_description expected_position="194">
+      <src_folder value="GROOVY_SUPPORT" expected_position="0" />
+      <src_folder value="file://$MODULE_DIR$/applications/accounting/src" expected_position="195" />
+      <src_folder value="file://$MODULE_DIR$/hot-deploy/store/src" expected_position="196" />
+      <src_folder value="file://$MODULE_DIR$/applications/content/src" expected_position="197" />
+      <src_folder value="file://$MODULE_DIR$/applications/manufacturing/src" expected_position="198" />
+      <src_folder value="file://$MODULE_DIR$/applications/marketing/src" expected_position="199" />
+      <src_folder value="file://$MODULE_DIR$/applications/order/src" expected_position="200" />
+      <src_folder value="file://$MODULE_DIR$/applications/party/src" expected_position="201" />
+      <src_folder value="file://$MODULE_DIR$/applications/product/src" expected_position="202" />
+      <src_folder value="file://$MODULE_DIR$/applications/securityext/src" expected_position="203" />
+      <src_folder value="file://$MODULE_DIR$/applications/workeffort/src" expected_position="204" />
+      <src_folder value="file://$MODULE_DIR$/framework/appserver/src" expected_position="205" />
+      <src_folder value="file://$MODULE_DIR$/framework/base/build/gen-src/javacc" expected_position="206" />
+      <src_folder value="file://$MODULE_DIR$/framework/base/src" expected_position="207" />
+      <src_folder value="file://$MODULE_DIR$/framework/bi/src" expected_position="208" />
+      <src_folder value="file://$MODULE_DIR$/framework/birt/src" expected_position="209" />
+      <src_folder value="file://$MODULE_DIR$/framework/catalina/src" expected_position="210" />
+      <src_folder value="file://$MODULE_DIR$/framework/common/src" expected_position="211" />
+      <src_folder value="file://$MODULE_DIR$/framework/datafile/src" expected_position="212" />
+      <src_folder value="file://$MODULE_DIR$/framework/entity/src" expected_position="213" />
+      <src_folder value="file://$MODULE_DIR$/framework/entityext/src" expected_position="214" />
+      <src_folder value="file://$MODULE_DIR$/framework/example/src" expected_position="215" />
+      <src_folder value="file://$MODULE_DIR$/framework/geronimo/src" expected_position="216" />
+      <src_folder value="file://$MODULE_DIR$/framework/guiapp/src" expected_position="217" />
+      <src_folder value="file://$MODULE_DIR$/framework/jetty/src" expected_position="218" />
+      <src_folder value="file://$MODULE_DIR$/framework/minilang/src" expected_position="219" />
+      <src_folder value="file://$MODULE_DIR$/framework/security/src" expected_position="220" />
+      <src_folder value="file://$MODULE_DIR$/framework/service/src" expected_position="221" />
+      <src_folder value="file://$MODULE_DIR$/framework/sql/src" expected_position="222" />
+      <src_folder value="file://$MODULE_DIR$/framework/sql/build/gen-src/javacc" expected_position="223" />
+      <src_folder value="file://$MODULE_DIR$/framework/start/src" expected_position="224" />
+      <src_folder value="file://$MODULE_DIR$/framework/testtools/src" expected_position="225" />
+      <src_folder value="file://$MODULE_DIR$/framework/webapp/src" expected_position="226" />
+      <src_folder value="file://$MODULE_DIR$/framework/webslinger/src" expected_position="227" />
+      <src_folder value="file://$MODULE_DIR$/framework/webtools/src" expected_position="228" />
+      <src_folder value="file://$MODULE_DIR$/framework/widget/src" expected_position="229" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/assetmaint/src" expected_position="230" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/ebay/src" expected_position="231" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/ebaystore/src" expected_position="232" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/ecommerce/src" expected_position="233" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/googlebase/src" expected_position="234" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/googlecheckout/src" expected_position="235" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/hhfacility/src" expected_position="236" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/ldap/src" expected_position="237" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/oagis/src" expected_position="238" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/pos/src" expected_position="239" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/projectmgr/src" expected_position="240" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/shark/src" expected_position="241" />
+      <src_folder value="file://$MODULE_DIR$/specialpurpose/workflow/src" expected_position="242" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/opentaps-common/src/base" expected_position="243" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/opentaps-common/src/constants" expected_position="244" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/opentaps-common/src/common" expected_position="245" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/opentaps-common/src/prebuild" expected_position="246" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/activities/src" expected_position="247" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/amazon/src" expected_position="248" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/analytics/src" expected_position="249" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/asterisk/src" expected_position="250" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/crmsfa/src" expected_position="251" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/dataimport/src" expected_position="252" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/financials/src" expected_position="253" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/opentaps-tests/src" expected_position="254" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/purchasing/src" expected_position="255" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/search/src" expected_position="256" />
+      <src_folder value="file://$MODULE_DIR$/opentaps/warehouse/src" expected_position="257" />
+      <src_folder value="GROOVY_DSL_SUPPORT" expected_position="287" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/applications/accounting/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hot-deploy/store/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/content/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/manufacturing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/marketing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/order/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/party/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/product/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/securityext/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/workeffort/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/appserver/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/base/build/gen-src/javacc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/base/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/bi/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/birt/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/catalina/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/common/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/datafile/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/entity/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/entityext/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/example/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/geronimo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/guiapp/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/jetty/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/minilang/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/security/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/service/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/sql/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/sql/build/gen-src/javacc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/start/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/testtools/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/webapp/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/webslinger/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/webtools/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/widget/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/assetmaint/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/ebay/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/ebaystore/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/ecommerce/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/googlebase/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/googlecheckout/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/hhfacility/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/ldap/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/oagis/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/pos/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/projectmgr/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/shark/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/specialpurpose/workflow/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/opentaps-common/src/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/opentaps-common/src/constants" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/opentaps-common/src/common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/opentaps-common/src/prebuild" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/activities/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/amazon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/analytics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/asterisk/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/crmsfa/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/dataimport/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/financials/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/opentaps-tests/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/purchasing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/search/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentaps/warehouse/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="lucene-core-2.4.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/applications/content/lib/lucene-core-2.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-3.2-FINAL-20081019.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/applications/content/lib/poi-3.2-FINAL-20081019.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-junit-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant-junit-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-launcher-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant-launcher-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-trax-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant-trax-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-apache-bsf-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant/ant-apache-bsf-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ant-nodeps-1.7.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ant/ant-nodeps-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="antisamy-bin.1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/antisamy-bin.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="avalon-framework-4.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/avalon-framework-4.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="avalon-util-exception-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/avalon-util-exception-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="barcode4j-fop-ext-complete-2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/barcode4j-fop-ext-complete-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="batik-all-1.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/batik-all-1.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="clhm-20100316.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/clhm-20100316.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hamcrest-all-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/hamcrest-all-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fop-0.95.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/fop-0.95.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="freemarker-2.3.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/freemarker-2.3.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-4.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/httpclient-4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-4.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/httpcore-4.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpunit.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/httpunit.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ical4j-1.0-rc2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/ical4j-1.0-rc2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="icu4j-4_4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/icu4j-4_4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jakarta-regexp-1.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/jakarta-regexp-1.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javolution-5.4.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/javolution-5.4.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcip-annotations-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/jcip-annotations-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jdbm-1.0-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/jdbm-1.0-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jdom-1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/jdom-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jpim-0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/jpim-0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="juel-2.2.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/juel-2.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/junit.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junitperf.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/junitperf.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j-1.2.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/log4j-1.2.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mail.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/mail.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mx4j-3.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/mx4j-3.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mx4j-remote-3.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/mx4j-remote-3.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nekohtml.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/nekohtml.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="owasp-esapi-full-java-1.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/owasp-esapi-full-java-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="resolver-2.9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/resolver-2.9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="serializer-2.9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/serializer-2.9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Tidy.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/Tidy.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xercesImpl-2.9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xercesImpl-2.9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xml-apis-2.9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xml-apis-2.9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xml-apis-ext-1.3.04.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xml-apis-ext-1.3.04.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlgraphics-commons-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xmlgraphics-commons-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xstream-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xstream-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xpp3_min-1.1.4c.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/xpp3_min-1.1.4c.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-beanutils-1.7.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-beanutils-1.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-cli-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-cli-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-codec-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-collections-3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-collections-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-digester-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-digester-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-discovery-0.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-discovery-0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-el-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-el-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-fileupload-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-fileupload-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-io-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-io-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang-2.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-lang-2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-logging-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-modeler-2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-modeler-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-net-1.4.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-net-1.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-pool-1.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-pool-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-primitives-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-primitives-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-validator-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-validator-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-vfs-20070730.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/commons/commons-vfs-20070730.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-activation_1.0.2_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-activation_1.0.2_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-j2ee-connector_1.5_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-j2ee-connector_1.5_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jaxr_1.0_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jaxr_1.0_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jaxrpc_1.1_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jaxrpc_1.1_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jms_1.1_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jms_1.1_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jta_1.1_spec-1.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-qname_1.1_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-qname_1.1_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-saaj_1.1_spec-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/geronimo-saaj_1.1_spec-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-annotations-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-annotations-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-el-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-el-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-jsp-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-jsp-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-servlet-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/j2eespecs/tomcat-6.0.26-servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="antlr-2.7.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/antlr-2.7.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-analysis-3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-analysis-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-tree-3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-tree-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-util-3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/asm-util-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bsf-2.4.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/bsf-2.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bsh-2.0b4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/bsh-2.0b4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="groovy-1.7-rc-2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/groovy-1.7-rc-2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jakarta-oro-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/jakarta-oro-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jython-nooro.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/scripting/jython-nooro.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="chartengineapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/chartengineapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="chartitemapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/chartitemapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coreapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/coreapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="crosstabcoreapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/crosstabcoreapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dataadapterapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/dataadapterapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dataaggregationapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/dataaggregationapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dataextraction.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/dataextraction.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dteapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/dteapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="emitterconfig.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/emitterconfig.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="engineapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/engineapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxrpc.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/jaxrpc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="modelapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/modelapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="modelodaapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/modelodaapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="odadesignapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/odadesignapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="saaj.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/saaj.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="scriptapi.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/scriptapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="viewservlets.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/birt/lib/viewservlets.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-catalina.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-catalina-ha.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina-ha.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-catalina-tribes.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-catalina-tribes.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-jasper.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-jasper-el.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper-el.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-jasper-jdt.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-jasper-jdt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-tomcat-coyote.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-coyote.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-tomcat-dbcp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-dbcp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-tomcat-juli.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-juli.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tomcat-6.0.26-tomcat-juli-adapters.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/catalina/lib/tomcat-6.0.26-tomcat-juli-adapters.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-dbcp-1.3-20091113-r835956.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/entity/lib/commons-dbcp-1.3-20091113-r835956.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ofbiz-minerva.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/entity/lib/ofbiz-minerva.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-connector-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/geronimo/lib/geronimo-connector-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-transaction-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/geronimo/lib/geronimo-transaction-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="XuiCoreSwing-v3.2rc2b.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/guiapp/lib/XuiCoreSwing-v3.2rc2b.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="XuiOptional-v3.2rc2b.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/guiapp/lib/XuiOptional-v3.2rc2b.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jasper-compiler-5.5.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jasper-compiler-5.5.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jasper-runtime-5.5.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jasper-runtime-5.5.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-6.1.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jetty-6.1.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-ajp-6.1.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jetty-ajp-6.1.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-sslengine-6.1.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jetty-sslengine-6.1.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-util-6.1.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/jetty/lib/jetty-util-6.1.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axis.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axis.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axis-ant.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axis-ant.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="wsdl4j.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/wsdl4j.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axiom-api-1.2.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axiom-api-1.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axiom-impl-1.2.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axiom-impl-1.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axis2-kernel-1.5.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axis2-kernel-1.5.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axis2-transport-http-1.5.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axis2-transport-http-1.5.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axis2-transport-local-1.5.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/axis2-transport-local-1.5.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-httpclient-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/commons-httpclient-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="neethi-2.0.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/neethi-2.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="XmlSchema-1.4.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/service/lib/XmlSchema-1.4.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="selenium-java-client-driver.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/testtools/lib/selenium-java-client-driver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="DataVision-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/DataVision-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ezmorph-0.9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/ezmorph-0.9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json-lib-2.2.3-jdk15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/json-lib-2.2.3-jdk15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rome-0.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/rome-0.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="velocity-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/velocity-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ws-commons-java5-1.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/ws-commons-java5-1.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ws-commons-util-1.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/ws-commons-util-1.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlrpc-client-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-client-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlrpc-common-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-common-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlrpc-server-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/xmlrpc-server-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-invoker-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/webslinger-base-invoker-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-cache-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-cache-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-collections-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-collections-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-collections-arrays-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-collections-arrays-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-concurrent-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-concurrent-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-html-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-html-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-io-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-io-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-javacc-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-javacc-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-junit-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-junit-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-lang-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-lang-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-logging-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-logging-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-resolver-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-resolver-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-util-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-util-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-base-xml-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-base-xml-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-catalina-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-catalina-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-cgi-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-cgi-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-embryo-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-embryo-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-beanshell-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-beanshell-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-bsf-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-bsf-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-code-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-code-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-commonsvfs-object-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-commonsvfs-object-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-directory-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-directory-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-freemarker-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-freemarker-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-groovy-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-groovy-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-image-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-image-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-janino-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-janino-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-jruby-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-jruby-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-jython-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-jython-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-nutch-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-nutch-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-plan9-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-plan9-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-quercus-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-quercus-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-rhino-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-rhino-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-servlet-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-servlet-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-template-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-template-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-velocity-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-velocity-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-extension-wiki-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-extension-wiki-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="webslinger-launcher-20091211-3897-7ab22baea4b6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webslinger/lib/webslinger-launcher-20091211-3897-7ab22baea4b6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="checkout-sdk-0.8.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/googlecheckout/lib/checkout-sdk-0.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cas-server-core-3.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/ldap/lib/cas-server-core-3.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcl.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/pos/lib/jcl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jpos18-controls.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/pos/lib/jpos18-controls.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="looks-2.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/pos/lib/looks-2.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="attributes.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/attributes.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ebaycalls.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/ebaycalls.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ebaysdkcore.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/ebaysdkcore.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="helper.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/specialpurpose/ebaystore/lib/helper.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="ejb3-persistence.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/ejb3-persistence.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-3.3.2.GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-3.3.2.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-annotations-3.4.0.GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-annotations-3.4.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-commons-annotations-3.4.0.GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-commons-annotations-3.4.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-search-3.1.1.GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/hibernate-search-3.1.1.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gwt-user-2.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwt-user-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gwtext.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwtext.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gwtextux.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/gwtextux.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jfreechart-1.0.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jfreechart-1.0.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcommon-1.0.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jcommon-1.0.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="inflector-0.7.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/inflector-0.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aspectwerkz-2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/aspectwerkz/aspectwerkz-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aspectwerkz-core-2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/aspectwerkz/aspectwerkz-core-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetm.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/jetm.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opentapsFedEx_RateService_Axis-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentapsFedEx_RateService_Axis-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-beans-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-beans-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-context-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-context-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-core-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/spring-core-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opentaps-common-entities.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentaps-common-entities.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opentaps-common-services.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/opentaps-common-services.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opentaps/opentaps-common/lib/hibernate/lucene-core-2.4.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/opentaps-common/lib/hibernate/lucene-core-2.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="iText-2.1.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/iText-2.1.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jasperreports-3.5.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/webapp/lib/jasperreports-3.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asterisk-java-0.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/asterisk/lib/asterisk-java-0.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="kettle-core-3.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-core-3.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="kettle-db-3.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-db-3.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="kettle-engine-3.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/etl/kettle-engine-3.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opentapsAmazon_Axis-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/opentaps/amazon/lib/opentapsAmazon_Axis-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="memcached-2.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/framework/base/lib/memcached-2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$" />
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/applications/accounting/src" />
+          <root url="file://$MODULE_DIR$/applications/content/src" />
+          <root url="file://$MODULE_DIR$/applications/manufacturing/src" />
+          <root url="file://$MODULE_DIR$/applications/marketing/src" />
+          <root url="file://$MODULE_DIR$/applications/order/src" />
+          <root url="file://$MODULE_DIR$/applications/party/src" />
+          <root url="file://$MODULE_DIR$/applications/product/src" />
+          <root url="file://$MODULE_DIR$/applications/securityext/src" />
+          <root url="file://$MODULE_DIR$/applications/workeffort/src" />
+          <root url="file://$MODULE_DIR$/debian" />
+          <root url="file://$MODULE_DIR$/framework/appserver/src" />
+          <root url="file://$MODULE_DIR$/framework/base/build/gen-src/javacc" />
+          <root url="file://$MODULE_DIR$/framework/base/src" />
+          <root url="file://$MODULE_DIR$/framework/bi/src" />
+          <root url="file://$MODULE_DIR$/framework/birt/src" />
+          <root url="file://$MODULE_DIR$/framework/catalina/src" />
+          <root url="file://$MODULE_DIR$/framework/common/src" />
+          <root url="file://$MODULE_DIR$/framework/datafile/src" />
+          <root url="file://$MODULE_DIR$/framework/entity/src" />
+          <root url="file://$MODULE_DIR$/framework/entityext/src" />
+          <root url="file://$MODULE_DIR$/framework/example/src" />
+          <root url="file://$MODULE_DIR$/framework/geronimo/src" />
+          <root url="file://$MODULE_DIR$/framework/guiapp/src" />
+          <root url="file://$MODULE_DIR$/framework/jetty/src" />
+          <root url="file://$MODULE_DIR$/framework/minilang/src" />
+          <root url="file://$MODULE_DIR$/framework/security/src" />
+          <root url="file://$MODULE_DIR$/framework/service/src" />
+          <root url="file://$MODULE_DIR$/framework/sql/build/gen-src/javacc" />
+          <root url="file://$MODULE_DIR$/framework/sql/src" />
+          <root url="file://$MODULE_DIR$/framework/start/src" />
+          <root url="file://$MODULE_DIR$/framework/testtools/src" />
+          <root url="file://$MODULE_DIR$/framework/webapp/src" />
+          <root url="file://$MODULE_DIR$/framework/webslinger/src" />
+          <root url="file://$MODULE_DIR$/framework/webtools/src" />
+          <root url="file://$MODULE_DIR$/framework/widget/src" />
+          <root url="file://$MODULE_DIR$/opentaps/activities/src" />
+          <root url="file://$MODULE_DIR$/opentaps/amazon/src" />
+          <root url="file://$MODULE_DIR$/opentaps/asterisk/src" />
+          <root url="file://$MODULE_DIR$/opentaps/controllerinjectex/src" />
+          <root url="file://$MODULE_DIR$/opentaps/crmsfa/src" />
+          <root url="file://$MODULE_DIR$/opentaps/dataimport/src" />
+          <root url="file://$MODULE_DIR$/opentaps/financials/src" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/src/base" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/src/common" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/src/constants" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/src/entities" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/src/prebuild" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-common/webapp/js/dojo_0.90/dojox/off/demos/editor/server" />
+          <root url="file://$MODULE_DIR$/opentaps/opentaps-tests/src" />
+          <root url="file://$MODULE_DIR$/opentaps/purchasing/src" />
+          <root url="file://$MODULE_DIR$/opentaps/search/src" />
+          <root url="file://$MODULE_DIR$/opentaps/warehouse/src" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/Store" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/assetmaint" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/catalog" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/demo" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/opentaps" />
+          <root url="file://$MODULE_DIR$/runtime/catalina/work/default-server/0.0.0.0/partymgr" />
+          <root url="file://$MODULE_DIR$/specialpurpose/assetmaint/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/crowd/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/ebay/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/ebaystore/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/ecommerce/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/googlebase/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/googlecheckout/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/hhfacility/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/ldap/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/oagis/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/pos/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/projectmgr/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/shark/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/webpos/src" />
+          <root url="file://$MODULE_DIR$/specialpurpose/workflow/src" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the OrderMgr Component." permissionId="ORDERMGR_VIEW"/>
+    <SecurityPermission description="Create operations in the OrderMgr Component." permissionId="ORDERMGR_CREATE"/>
+    <SecurityPermission description="Update operations in the OrderMgr Component." permissionId="ORDERMGR_UPDATE"/>
+    <SecurityPermission description="Delete operations in the OrderMgr Component." permissionId="ORDERMGR_DELETE"/>
+    <SecurityPermission description="ALL operations in the OrderMgr Component." permissionId="ORDERMGR_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="ORDERMGR_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="ORDERMGR_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="ORDERMGR_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="ORDERMGR_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="ORDERMGR_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="ORDERMGR_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="ORDERMGR_ADMIN"/>
+    
+    <SecurityPermission description="cancel订单权限,店长可以取消订单." permissionId="BIM_ORDER_CANCEL"/>
+    <SecurityPermission description="complete订单权限，销售经理." permissionId="BIM_ORDER_COMPLETE"/>
+
+    <SecurityGroup description="complete订单权限，销售经理." groupId="BIM_ORDER_CANCEL"/>
+    <SecurityGroup description="complete订单权限，销售经理." groupId="BIM_ORDER_COMPLETE"/>
+    
+	<SecurityGroupPermission groupId="BIM_ORDER_CANCEL" permissionId="BIM_ORDER_CANCEL"/>    
+	<SecurityGroupPermission groupId="BIM_ORDER_COMPLETE" permissionId="BIM_ORDER_COMPLETE"/>    
+	<SecurityGroupPermission groupId="FLEXADMIN" permissionId="BIM_ORDER_CANCEL"/>    
+	<SecurityGroupPermission groupId="FLEXADMIN" permissionId="BIM_ORDER_COMPLETE"/>    
+    
+</entity-engine-xml>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+    <description>comm services</description>
+    <vendor>yiwill</vendor>
+    <version>1.0</version>
+
+   	<service name="getHomeApplications" engine="java" 
+            location="org.ofbiz.commondefine.service.GetHomeApplicationsService" invoke="getHomeApplications">
+        <description>Load an existing shopping cart</description>
+        <attribute name="apps" type="List" mode="OUT" optional="false"/>
+        <attribute name="currenttime" type="String" mode="OUT" optional="false"/>
+        <attribute name="timeZoneId" type="String" mode="OUT" optional="false"/>
+        <attribute name="isShip" type="String" mode="OUT" optional="false"/>
+        <attribute name="rawOffset" type="Integer" mode="OUT" optional="false"/>
+        <attribute name="timeNow" type="Long" mode="OUT" optional="false"/>
+        <attribute name="SystemSettingsUomid" type="String" mode="OUT" optional="false"/>
+        <attribute name="imei" type="String" mode="OUT" optional="true"/>
+        <attribute name="piwikHost" type="String" mode="OUT" optional="false"/>
+        <attribute name="piwikPort" type="String" mode="OUT" optional="false"/>
+        <attribute name="piwikSiteId" type="String" mode="OUT" optional="false"/>
+    </service>
+    
+    
+        <service name="getSystemSettings" engine="java" 
+            location="org.ofbiz.commondefine.service.GetSystemSetting" invoke="getSystemSettings">
+        <description>get System Settings</description>
+        <attribute name="systemsettinguomid" type="String" mode="OUT" optional="false"/>
+        <attribute name="isShip" type="String" mode="OUT" optional="false"/>
+        <attribute name="countryId" type="String" mode="OUT" optional="false"/>
+        <attribute name="imei" type="String" mode="OUT" optional="true"/>
+        <attribute name="egateeCost" type="String" mode="OUT" optional="false"/>
+        <attribute name="specialCost" type="String" mode="OUT" optional="false"/>
+        <attribute name="retailCost" type="String" mode="OUT" optional="false"/>
+        <attribute name="proxyHost" type="String" mode="OUT" optional="false"/>
+        <attribute name="piwikHost" type="String" mode="OUT" optional="false"/>
+        <attribute name="piwikPort" type="String" mode="OUT" optional="false"/>
+        <attribute name="piwikSiteId" type="String" mode="OUT" optional="false"/>
+    </service>
+    <service name="sendJson" engine="java" 
+            location="org.ofbiz.commondefine.service.SendJsonService" invoke="sendJson">
+        <description>send Json</description>
+        <attribute name="data" type="String" mode="OUT" optional="false"/>
+    </service>
+    
+    
+    <service name="receiveJson" engine="java" 
+            location="org.ofbiz.commondefine.service.ReceiveJson" invoke="receiveJson">
+        <description>receive Json</description>
+        <attribute name="data" type="json" mode="IN" optional="false"/>
+    </service>
+    
+</services>

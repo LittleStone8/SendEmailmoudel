@@ -1,0 +1,67 @@
+
+<script type="text/html" id="createLotFormColumn">
+<div id="create_lot">
+      		<div class="lot_search">
+				<span class="inventory_item_name">Lot Id</span>
+				<input type="text" id="lotId" class="lot_input" />
+				<span class="item_verify" data-type="lotId"></span>
+			</div>
+            <div  class="lot_search clearfix">
+				<span class="inventory_item_name lot_date">Expire Date</span>
+				<input id="lotDate" class="lot_row_input  laydate-icon recevice_nohover clearfix" value="{{nowTime}}"/>
+				        	
+				
+			</div>
+            <div  class="lot_search">
+				<span class="inventory_item_name">Quantity</span>
+				<input type="text" id="quantity" class="lot_input" />
+                <select id="uomId" class="lot_search_select">
+					
+				</select>
+                <span class="lot_verify"></span>
+				<span class="item_verify quantityVerify" data-type="quantityAccepted"></span>
+			</div>
+            <div  class="lot_search clearfix">
+				<div class="inventory_item_textarea" ><span class="inventory_item_textarea_name">Comments</span></div>
+				<div><textarea rows="5" cols="48" id="comments"></textarea></div>
+			</div>
+			<div  class="lot_btn lot_create"><a href="javascript:void(0)">Create</a></div>
+   </div>
+   <div id="showDetails">
+   </div>
+   
+</script>
+<script type="text/html" id="showUomIdColumn">
+{{if result.length>0}}
+   {{each result as value i}}
+	<option value="{{value.uomId}}" {{if value.uomId=='WT_kg'}}selected{{/if}}>{{value.description}}</option>
+   {{/each}}
+{{/if}}				
+</script>
+<script type="text/html" id="showLotDetailColumn">
+   <div id="lot_details">
+          <div class="lot_info">
+				<span class="inventory_item_name">Lot Id</span>
+				<span>{{result.lotId}}</span>
+			</div>
+            <div  class="lot_info">
+				<span class="inventory_item_name">Create Data</span>
+				<span>{{result.createDate.substring(0,result.createDate.length-2)}}</span>
+			</div>
+			<div  class="lot_search">
+				<span class="inventory_item_name">Expire Date</span>
+				<span>{{result.expirationDate.substring(0,result.createDate.length-2)}}</span>
+			</div>
+            <div  class="lot_search">
+				<span class="inventory_item_name">Quantity</span>
+				<span>{{result.quantity}}</span>
+			</div>
+            <div  class="lot_search">
+				<span class="inventory_item_name">Comments</span>
+				<span>{{result.comments}}</span>
+			</div>
+			<div  class="lot_btn lot_done"><a href="javascript:void(0)" data-lotid="{{result.lotId}}">Done</a></div>            
+   </div>
+</script>
+
+

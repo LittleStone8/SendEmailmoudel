@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="ReportApplication">
+        <value xml:lang="en">Report Application</value>
+        <value xml:lang="zh">Report管理</value>
+    </property>
+    <property key="ReportCompanyName">
+        <value xml:lang="en">Report</value>
+    </property>
+    <property key="ReportViewPermissionError">
+        <value xml:lang="en">You are not allowed to view this page.</value>
+        <value xml:lang="zh">不允许你浏览这个页面。</value>
+    </property>
+ 
+</resource>

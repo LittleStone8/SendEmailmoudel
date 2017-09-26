@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <!-- Special ofbiz legacy requests we should be paring down as we replace these screens with our own. -->
+    <include location="component://ordermgr/webapp/ordermgr/WEB-INF/legacy-controller.xml"/>
+
+    <description>CRMSFA Module Site Configuration File</description>
+    <owner>Open Source Strategies, Inc.</owner>
+    <errorpage>/error/error.jsp</errorpage>
+
+    <!-- event handlers -->
+	<handler name="json" type="request" class="org.ofbiz.commondefine.comm.JsonHandler"/>
+ 	<handler name="java" type="request" class="org.ofbiz.webapp.event.JavaEventHandler"/>
+ 
+    <!-- view handlers -->
+    <handler name="screen" type="view" class="org.ofbiz.widget.screen.ScreenWidgetViewHandler"/>
+	
+    
+
+   <!--  <preprocessor>
+        <event type="java" path="org.ofbiz.webapp.control.LoginWorker" invoke="checkExternalLoginKey"/>
+    </preprocessor>
+    <postprocessor>
+    </postprocessor> -->
+    
+
+   	<request-map uri="checkLogin" edit="false">
+        <description>Verify a user is logged in.</description>
+        <security https="true" auth="false"/>
+        <event type="java" path="org.ofbiz.commondefine.events.LoginEvents" invoke="validateToken" />
+        <response name="success" type="none"/>
+        <response name="error" type="view" value="login" />
+    </request-map>
+    
+	<request-map uri="initWebpos">	
+		<security https="false" auth="true"/>
+		<event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="initWebpos"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="main">	
+       <security https="false" auth="true"/>
+       <event type="java" path="com.yiwill.pos.event.YWShopLoginEvents" invoke="wPosCheck" />
+       <response name="success" type="url" value="/wpos/control/webpos"/>
+       <response name="success" type="url" value="/wpos/control/login"/>
+    </request-map>
+    
+   	<request-map uri="findTerminal">	
+	 	<event type="json" path="com.yiwill.pos.event.YWShopLoginFindTerminalEvents" invoke="findTerminal"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="mlogin">	
+	 	<event type="json" path="com.yiwill.pos.event.YWShopLoginEvents" invoke="mlogin"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="login">	
+	 	<security https="false" auth="true"/>
+        <response name="success" type="view" value="login"/>
+    </request-map>
+	
+	<request-map uri="webpos">	
+		<security https="false" auth="true"/>
+        <response name="success" type="view" value="webpos"/>
+    </request-map>
+    <request-map uri="initWebpos">	
+        <security https="false" auth="true"/>
+	 	<event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="initWebpos"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="addToCart">	
+    	<security https="false" auth="true"/>
+	 	<event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="addToCart"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="checkIMEIisAvalible">	
+    	<security https="false" auth="true"/>
+	 	<event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="checkIMEIisAvalible"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+    <request-map uri="modifyCart">	
+    	<security https="false" auth="true"/>
+	 	<event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="modifyCart"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="createPersonContact">	
+   		<security https="false" auth="true"/>
+       <event type="json" path="com.yiwill.pos.event.CreatePersonContactEvents" invoke="createPersonContact"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="payCash">	
+   		<security https="false" auth="true"/>
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="payCash"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="payInvoicing">	
+   		<security https="false" auth="true"/>
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="payInvoicing"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="changeUser">	
+   		<security https="false" auth="true"/>
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="changeUser"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="changeSales">	
+   		<security https="false" auth="true"/>
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="changeSales"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+   	<request-map uri="changeProductStoreGroupId">	
+   		<security https="false" auth="true"/>
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="changeProductStoreGroupId"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+	<request-map uri="findOrderPro">
+		<security https="false" auth="false"/>	
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="findOrderPro"/>
+        <response name="success" type="none"/>
+    </request-map>
+    
+	<request-map uri="createOrUpdatePerson">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.commondefine.events.SimpleProxyEvents" invoke="simpleProxy" />
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+	<request-map uri="addPostalAddress">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.commondefine.events.SimpleProxyEvents" invoke="simpleProxy" />
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+	<request-map uri="findPersonByTelecomNumber">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.commondefine.events.SimpleProxyEvents" invoke="simpleProxy" />
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+	<request-map uri="findPersonByUserName">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.commondefine.events.SimpleProxyEvents" invoke="simpleProxy" />
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+    
+    
+    
+	<request-map uri="test">
+		<security https="false" auth="true"/>	
+        <event type="json" path="com.yiwill.pos.event.YWShopEvents" invoke="test"/>
+        <response name="success" type="none"/>
+    </request-map>
+
+    
+   <view-map name="webpos" type="screen" page="component://wpos/widget/PosScreens.xml#webpos"/>
+   
+   
+   <view-map name="login" type="screen" page="component://wpos/widget/PosScreens.xml#login"/>
+
+</site-conf>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="StoreAppBar" title="${uiLabelMap.StoreApplication}" extends="CommonAppBarMenu" extends-resource="component://common/widget/CommonMenus.xml">
+<!--         <menu-item name="main" title="${uiLabelMap.CommonMain}"><link target="main"/></menu-item> -->
+        <!--         <menu-item name="promos" title="${uiLabelMap.ProductPromos}"><link target="FindProductPromo"/></menu-item> -->
+        <menu-item name="main" title="${uiLabelMap.ProductStores}"><link target="FindProductStore"/></menu-item>
+<!-- 		<menu-item name="EditProductStore" title="${uiLabelMap.ProductStore}"> -->
+<!--             <link target="EditProductStore"> -->
+<!--                 <parameter param-name="productStoreId"/> -->
+<!--             </link> -->
+<!--         </menu-item> -->
+        <menu-item name="FindProductStoreRoles" title="${uiLabelMap.PartyRoles}">
+            <link target="FindProductStoreRoles">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStorePromos" title="${uiLabelMap.ProductPromos}">
+            <link target="EditProductStorePromos">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreCatalogs" title="${uiLabelMap.ProductCatalogs}">
+            <link target="EditProductStoreCatalogs">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreWebSites" title="${uiLabelMap.ProductWebSites}">
+            <link target="EditProductStoreWebSites">
+                <parameter param-name="viewProductStoreId" from-field="productStoreId"/>
+            </link>
+        </menu-item>
+        <!-- The tax stuff is in the Tax Authority area of the accounting manager, need to re-do this screen to list current tax entries and link to the accmgr screens
+        <menu-item name="EditProductStoreTaxSetup" title="${uiLabelMap.ProductSalesTax}">
+            <link target="EditProductStoreTaxSetup">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        -->
+        <menu-item name="EditProductStoreShipSetup" title="${uiLabelMap.ProductShipping}">
+            <link target="EditProductStoreShipSetup">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreShipmentCostEstimates" title="${uiLabelMap.ProductViewEstimates}">
+            <link target="EditProductStoreShipmentCostEstimates">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStorePaySetup" title="${uiLabelMap.CommonPayments}">
+            <link target="EditProductStorePaySetup">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreFinAccountSettings" title="${uiLabelMap.CommonFinAccounts}">
+            <link target="EditProductStoreFinAccountSettings">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreEmails" title="${uiLabelMap.CommonEmails}">
+            <link target="EditProductStoreEmails">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+<!--         <menu-item name="EditProductStoreSurveys" title="${uiLabelMap.CommonSurveys}"> -->
+<!--             <link target="EditProductStoreSurveys"> -->
+<!--                 <parameter param-name="productStoreId"/> -->
+<!--             </link> -->
+<!--         </menu-item> -->
+        <menu-item name="EditProductStoreKeywordOvrd" title="${uiLabelMap.ProductOverride}">
+            <link target="editProductStoreKeywordOvrd">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="ViewProductStoreSegments" title="${uiLabelMap.ProductSegments}">
+            <link target="ViewProductStoreSegments">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreVendorPayments" title="${uiLabelMap.ProductVendorPayments}">
+            <link target="EditProductStoreVendorPayments">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+        <menu-item name="EditProductStoreVendorShipments" title="${uiLabelMap.ProductVendorShipments}">
+            <link target="EditProductStoreVendorShipments">
+                <parameter param-name="productStoreId"/>
+            </link>
+        </menu-item>
+    </menu>
+</menus>

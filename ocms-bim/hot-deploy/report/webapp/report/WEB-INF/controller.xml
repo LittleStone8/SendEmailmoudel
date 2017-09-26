@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <!-- The controller elements that are common to all OFBiz components
+         can be found in the following xml file. A component can override the
+         elements found in the common-controller.xml file. -->
+    <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+    <description>Report Component Site Configuration File</description>
+    <owner></owner>
+    <handler name="service-multi" type="request" class="org.ofbiz.webapp.event.ServiceMultiEventHandler"/>
+    <handler name="groovy" type="request" class="org.ofbiz.webapp.event.GroovyEventHandler"/>	
+	<handler name="jsonjava" type="request" class="org.ofbiz.webapp.event.JSONJavaEventHandler"/>
+  	<handler name="json" type="request" class="org.ofbiz.commondefine.comm.JsonHandler"/> 
+  
+    
+    <!-- Request Mappings -->
+    <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+    <request-map uri="authview"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+
+    
+<!-- 	店铺租管理 -->
+<!--======================店铺租管理begin===============================-->
+
+
+	<request-map uri="checkLogin" edit="false">
+		<description>Verify a user is logged in.</description>
+		<security https="false" auth="false" />
+		<event type="java" path="org.ofbiz.commondefine.events.LoginEvents"
+			invoke="validateToken" />
+		<response name="success" type="none" />
+		<response name="error" type="view" value="login" />
+	</request-map>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <request-map uri="SearchStoreAndGroupsByConditions">
+        <event type="json" path="org.ofbiz.storegroup.event.StoreGroupEvent" invoke="searchStoreAndGroupsByConditions" />
+        <response name="success" type="none"/>
+    </request-map>
+    
+	<!--    批量修改店铺租关系	 -->
+  	<request-map uri="SGroupsBatchUpdates">
+        <event type="json" path="org.ofbiz.storegroup.event.StoreGroupEvent" invoke="sGroupsBatchUpdates" />
+        <response name="success" type="none"/>
+    </request-map>
+
+    
+<!--======================店铺租管理end================================-->      
+<!--=======================销售报表begin===============================-->    
+	<!-- 	BAN销售报表模块 -->
+	<request-map uri="BANSalesReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="BANSalesReport"/>
+    </request-map>
+  
+	<request-map uri="OperatorSalesReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="operatorSalesReport"/>
+    </request-map>
+
+    <request-map uri="AutoSearchProduct">
+		<security https="true" auth="true"/>
+		<event type="json" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="searchProductsByLikeID" />	
+        <response name="success" type="none"/>    
+    </request-map>
+
+    	<!-- 	 查询可用店铺和店铺租 -->
+    <request-map uri="SearchAvailableStoresAndSGroups_BANSALE">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="searchAvailableStoresAndSGroups" />
+        <response name="success" type="none"/>
+    </request-map>   
+    
+    
+   <request-map uri="aaaaaaaaaaaaaa">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.regularRecord.RecordInventoryReport" invoke="GH_RegularRecords" />
+        <response name="success" type="none"/>
+    </request-map>   
+    
+    <request-map uri="SearchAvailableStoresAndSGroups_MTNSALE">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.sales.OperatorSalesReportEvent" invoke="searchAvailableStoresAndSGroups" />
+        <response name="success" type="none"/>
+    </request-map>            
+    
+     <!-- 	 查询报表 -->
+ 	<request-map uri="SearchMarketByConditions_BAN">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="searchMarketByConditions" />
+        <response name="success" type="none"/>
+    </request-map>
+    <request-map uri="test">
+		<security https="true" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="test" />
+        <response name="success" type="none"/>
+    </request-map>
+    <!-- 查询销售报表表头		chenshihua	2017-7-3 -->
+    <request-map uri="GetReportTableHead_BAN">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="getReportTableHead" />
+        <response name="success" type="none"/>
+    </request-map>
+    
+	<request-map uri="SearchMarketByConditions_MTN">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.sales.OperatorSalesReportEvent" invoke="searchMarketByConditions" />
+        <response name="success" type="none"/>
+    </request-map>
+    
+    
+    
+    
+    <request-map uri="ExportSalesReport">
+		<security https="true" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.sales.SalesReportEvent" invoke="exportSalesReport" />
+        <response name="success" type="none"/>
+    </request-map>
+    <request-map uri="exportPaymentSummary">
+		<security https="true" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.sales.BaseSalesReportEvent" invoke="exportPaymentSummary" />
+        <response name="success" type="none"/>
+    </request-map>
+    
+    
+    
+    <request-map uri="MTN_ExportSalesReport">
+		<security https="true" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.sales.OperatorSalesReportEvent" invoke="operatorExportSalesReport" />
+        <response name="success" type="none"/>
+    </request-map>
+    
+ 
+<!--=======================销售报表End===============================-->    
+
+<!-- 库存报表 begin================================== -->
+    <!-- yzl  2017-4-13	库存报表y -->
+    <request-map uri="BANInventoryReport">
+        <security https="true" auth="true"/>
+        <response name="success"  type="view" value="BANInventoryReport"/>
+    </request-map>
+
+	<!-- yzl20170630后台导出 -->
+	<request-map uri="ExportBANInventoryReport">
+    	<security https="false" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.inventory.InventoryReportEvent" invoke="ExportBANInventoryReport"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    <request-map uri="ExportOperatorInventoryReport">
+    	<security https="false" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.event.inventory.OperatorInventoryReportEvent" invoke="ExportOperatorInventoryReport"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+
+    <request-map uri="OperatorInventoryReport">
+        <security https="true" auth="true"/>
+        <response name="success"  type="view" value="operatorInventoryReport"/>
+    </request-map>
+    
+    <!-- 	 查询可用店铺和店铺租 -->
+    <request-map uri="SearchAvailableStoresAndSGroups_BANINV">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.inventory.InventoryReportEvent" invoke="searchAvailableStoresAndSGroups_BAN" />
+        <response name="success" type="none"/>
+    </request-map>   
+    
+    <request-map uri="SearchAvailableStoresAndSGroups_MTNINV">
+		<security https="true" auth="true"/>
+        <event type="json" path="org.ofbiz.report.report.event.inventory.OperatorInventoryReportEvent" invoke="searchAvailableStoresAndSGroups_MTN" />
+        <response name="success" type="none"/>
+    </request-map>        
+
+
+	<!-- yzl		2017-4-13	库存报表API test -->
+   <request-map uri="LookupInventoryReport_BANINV">
+        <event type="json" path="org.ofbiz.report.report.event.inventory.InventoryReportEvent" invoke="search_DEFAULTMarketByConditions"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+   <!-- yzl		2017-4-13	库存报表API test -->
+   <request-map uri="LookupInventoryReport_MTNINV">
+        <event type="json" path="org.ofbiz.report.report.event.inventory.OperatorInventoryReportEvent" invoke="search_SPECIALMarketByConditions"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+    
+    	<!-- yzl		20170803 出库报表借口 -->
+   <request-map uri="serachStockOutReportByConditions">
+        <event type="json" path="org.ofbiz.report.report.helper.stockoutreport.StockOutReportHelper" invoke="serachStockOutReportByConditions"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+    
+   <request-map uri="ExportStockOutReportByConditions">
+    	<security https="false" auth="true"/>
+        <event type="java" path="org.ofbiz.report.report.helper.stockoutreport.StockOutReportHelper" invoke="ExportStockOutReportByConditions"/>
+        <response name="success" type="none" />
+        <response name="error" type="none" />
+    </request-map>
+    
+    
+	<!-- 库存报表 end================================== -->
+	
+	<!-- stockin report -->
+	<request-map uri="StockinReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="StockinReport"/>
+    </request-map>
+
+  
+	<request-map uri="OperatorStockinReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="OperatorStockinReport"/>
+    </request-map>
+    
+
+	<!-- stockout report -->
+	<request-map uri="StockoutReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="StockoutReport"/>
+    </request-map>
+  
+	<request-map uri="OperatorStockoutReport">
+	    <security https="true" auth="true"/>
+	    <response name="success" type="view" value="OperatorStockoutReport"/>
+    </request-map>
+    
+
+		
+
+    <!-- View Mappings -->
+    <view-map name="login" type="screen" page="component://commondefine/widget/CommonScreens.xml#lgoin"/>
+    <view-map name="main" type="screen" page="component://report/widget/ReportScreens.xml#main"/>
+    <view-map name="BANSalesReport" type="screen" page="component://report/widget/ReportScreens.xml#BANSalesReport"/>
+    <view-map name="operatorSalesReport" type="screen" page="component://report/widget/ReportScreens.xml#MTNSalesReport"/>
+    <view-map name="BANInventoryReport" type="screen" page="component://report/widget/ReportScreens.xml#BANInventoryReport"/>
+    <view-map name="StockoutReport" type="screen" page="component://report/widget/ReportScreens.xml#StockoutReport"/>
+    <view-map name="StockinReport" type="screen" page="component://report/widget/ReportScreens.xml#StockinReport"/>
+    <view-map name="OperatorStockinReport" type="screen" page="component://report/widget/ReportScreens.xml#OperatorStockinReport"/>
+    <view-map name="OperatorStockoutReport" type="screen" page="component://report/widget/ReportScreens.xml#OperatorStockoutReport"/>
+    <view-map name="operatorInventoryReport" type="screen" page="component://report/widget/ReportScreens.xml#MTNInventoryReport"/>
+</site-conf>

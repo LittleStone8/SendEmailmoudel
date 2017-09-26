@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) Open Source Strategies, Inc.
+ * 
+ * Opentaps is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Opentaps is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Opentaps.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<entity-engine-xml>
+
+<!-- The Web Application -->
+<OpentapsWebApps applicationId="crmsfa" shortName="Crm Management" sequenceNum="60" applicationName="新建订单，订单列表，查找订单，退货，购物清单"
+    description="订单管理系统。管理订单的创建，列表和查询，以及订单退货和购物清单." 
+             imageUrl="/opentaps_images/integratingweb/crm.png" imageHoverUrl="/opentaps_images/integratingweb/crmHover.png" linkUrl="/crmsfa/control/ordersMain"
+             lastUpdatedStamp="2017-02-07 14:31:23.679" lastUpdatedTxStamp="2017-02-07 14:31:23.679" createdStamp="2017-02-07 14:31:23.679" createdTxStamp="2017-02-07 14:31:23.679"/>
+
+<!-- Tabs -->
+ <OpentapsWebAppTab applicationId="crmsfa"  sequenceNum="010" tabId="myOrders" uiLabel="CrmMyOrders"
+					linkUrl="myOrders"    securityModule="" securityAction=""/>
+ <OpentapsWebAppTab applicationId="crmsfa"  sequenceNum="020" tabId="createOrder" uiLabel="OpentapsCreateOrder"
+                    linkUrl="createOrderMainScreen" securityModule="CRMSFA_ORDER" securityAction="CREATE"/>
+ <OpentapsWebAppTab applicationId="crmsfa"  sequenceNum="030" tabId="findOrder" uiLabel="OrderFindOrder"
+ 					linkUrl="findOrders"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+ <OpentapsWebAppTab applicationId="crmsfa"  sequenceNum="040" tabId="returnOrders" uiLabel="CrmReturns"
+ 					linkUrl="pendingReturns"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+<OpentapsWebAppTab applicationId="crmsfa"  sequenceNum="050" tabId="shoppingLists" uiLabel="CrmShoppingLists"
+ 					linkUrl="findShoppingList"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+ 					
+<!-- 
+ handlerMethod="org.opentaps.webapp.handlers.CommonHandlers.checkHasNoCart" -->
+<!-- returns group -->
+<OpentapsShortcutGroup applicationId="crmsfa" tabId="returnOrders" groupId="crmsfaReturns" sequenceNum="010" uiLabel="CrmReturns"/>
+<OpentapsShortcut shortcutId="pendingReturns" groupId="crmsfaReturns" sequenceNum="010" uiLabel="CrmPendingReturns"
+                        linkUrl="pendingReturns" securityModule="" securityAction="" />
+<OpentapsShortcut shortcutId="findReturns" groupId="crmsfaReturns" sequenceNum="020" uiLabel="CrmFindReturns"
+                        linkUrl="findReturns" securityModule="" securityAction="" />
+<OpentapsShortcut shortcutId="createReturn" groupId="crmsfaReturns" sequenceNum="030" uiLabel="CrmCreateReturn"
+                        linkUrl="createReturnForm" securityModule="CRMSFA_RETURN" securityAction="CREATE" />
+   
+   
+   
+                        
+                        
+                   <!--      The Web Application
+<OpentapsWebApps applicationId="ordermgr" shortName="订单管理新" sequenceNum="12" applicationName="订单管理"
+    description="订单管理系统。管理订单的创建，列表和查询，以及订单退货和购物清单." 
+             imageUrl="/opentaps_images/integratingweb/crm.png" imageHoverUrl="/opentaps_images/integratingweb/crmHover.png" linkUrl="/crmsfa/control/ordersMain"
+             lastUpdatedStamp="2017-02-07 14:31:23.679" lastUpdatedTxStamp="2017-02-07 14:31:23.679" createdStamp="2017-02-07 14:31:23.679" createdTxStamp="2017-02-07 14:31:23.679"/>
+
+Tabs
+ <OpentapsWebAppTab applicationId="ordermgr"  sequenceNum="010" tabId="myOrders" uiLabel="CrmMyOrders"
+					linkUrl="myOrders"    securityModule="" securityAction=""/>
+ <OpentapsWebAppTab applicationId="ordermgr"  sequenceNum="020" tabId="createOrder" uiLabel="OpentapsCreateOrder"
+                    linkUrl="createOrderMainScreen" securityModule="CRMSFA_ORDER" securityAction="CREATE"/>
+ <OpentapsWebAppTab applicationId="ordermgr"  sequenceNum="030" tabId="findOrder" uiLabel="OrderFindOrder"
+ 					linkUrl="findOrders"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+ <OpentapsWebAppTab applicationId="ordermgr"  sequenceNum="040" tabId="returnOrders" uiLabel="CrmReturns"
+ 					linkUrl="pendingReturns"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+<OpentapsWebAppTab applicationId="ordermgr"  sequenceNum="050" tabId="shoppingLists" uiLabel="CrmShoppingLists"
+ 					linkUrl="findShoppingList"    securityModule="CRMSFA_ORDER" securityAction="VIEW" handlerMethod=""/>
+ 					
+
+ handlerMethod="org.opentaps.webapp.handlers.CommonHandlers.checkHasNoCart"
+returns group
+<OpentapsShortcutGroup applicationId="ordermgr" tabId="returnOrders" groupId="crmsfaReturns" sequenceNum="010" uiLabel="CrmReturns"/>
+<OpentapsShortcut shortcutId="pendingReturns" groupId="crmsfaReturns" sequenceNum="010" uiLabel="CrmPendingReturns"
+                        linkUrl="pendingReturns" securityModule="" securityAction="" />
+<OpentapsShortcut shortcutId="findReturns" groupId="crmsfaReturns" sequenceNum="020" uiLabel="CrmFindReturns"
+                        linkUrl="findReturns" securityModule="" securityAction="" />
+<OpentapsShortcut shortcutId="createReturn" groupId="crmsfaReturns" sequenceNum="030" uiLabel="CrmCreateReturn"
+                        linkUrl="createReturnForm" securityModule="CRMSFA_RETURN" securityAction="CREATE" /> -->
+</entity-engine-xml>

@@ -1,0 +1,80 @@
+<script type="text/html" id="findCategoryColumn">
+<div id="findContent">
+ <div id="find_category">
+
+ <form id="categoryForm">
+	<div class="category_search">
+		<span class="inventory_item_name">Name</span>
+		<input type="text" id="categoryName" class="search_input"/>
+	</div>	
+</form>
+	<div class="search_btn">
+       <a href="javascript:void(0)">find</a>
+    </div>
+   <div class="search_info">	
+	<table class="search_info_table">
+		<thead>
+			<tr>
+				<th><a href="javascript:void(0)">Category Id</a></th>
+				<th><a href="javascript:void(0)">Category</th>
+			</tr>
+		</thead>
+	
+		<tbody id="tbody">
+		    
+			
+		</tbody>
+        
+	</table>
+	<div id="tablePager" class="clearfix">
+     
+	</div>
+	</div>
+   		</div>
+</div>
+</script>
+<script type="text/html" id="categoryTbodyColumn">
+
+	{{if result.length>0}}
+		{{each result as value i}}
+			<tr class="">
+			 <td><a href='javascript:void(0);' class='table_btn'>{{value.productCategoryId}}</a></td>
+			 <td>{{value.categoryName}}</td>
+            </tr>
+		{{/each}}
+	{{/if}}
+{{if result.length==0}}
+			<tr>
+               <td colspan="2">0 results</td>
+            </tr>
+	{{/if}}
+			    
+</script>
+<script type="text/html" id="categoryPage">
+	{{if totalNum>0}}<div class="goPage"><span>GO</span><input type="text" data-big-num="{{totalPage}}" class="go_page_input"/></div>{{/if}}
+	<ul class="paging clearfix" id="fenye">
+	    {{if totalNum>0}}
+              <li ><a href="javascript:void(0)"  data-type="home" data-num="1" ><span  class="page_home"></span></a></li>
+            
+                 <li ><a href="javascript:void(0)"  data-num="{{pageNum-1}}" ><span  class="page_prev"></span></a></li>
+                
+			
+			{{each nums as value}}
+                {{if value==pageNum}}
+                    <li class='active'><a href="javascript:void(0)" data-num="{{value}}" >{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+                {{if value!=pageNum}}
+                    <li ><a href="javascript:void(0)" data-num="{{value}}">{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+            {{/each}}
+           
+           <li ><a href="javascript:void(0)"  data-num="{{pageNum+1}}"><span  class="page_next"></span></a></li>
+           
+          <li ><a href="javascript:void(0)" data-type="final"  data-num="{{totalPage}}"><span  class="page_final"></span></a></li>
+		  
+{{/if}}
+	</ul>
+    
+	
+</script>
+

@@ -1,0 +1,60 @@
+#inventory_transfer{ height: 100%; background: #f7f7f7; }
+#inventory_transfer .inventory_transfer_list_wap{ background: #ffffff;width: 100%; }
+#inventory_transfer .inventory_transfer_list{ width: 1280px;height: 100%;margin: 0 auto;background: #ffffff; }
+#inventory_transfer .inventory_transfer_header{ width: 1280px;height: 50px; }
+#inventory_transfer .inventory_transfer_header .inventory_transfer_login{ float: right;padding: 0 30px 0 20px;height: 50px; }
+#inventory_transfer .inventory_transfer_login span{ display: inline-block;font-size: 14px;color: #424242;height: 30px;margin: 10px 15px 0 0;line-height: 30px; }
+#inventory_transfer .inventory_transfer_login span em{ font-style: normal; }
+#inventory_transfer .inventory_transfer_login a{ display: inline-block;color: #8cc152;height: 30px;margin-top: 10px;line-height: 30px; }
+#inventory_transfer .inventory_transfer_header .inventory_transfer_logo{ float: left;height: 50px;background: url("../img/yiwill_logo.png") no-repeat center right;width: 160px;background-size: 90%; }
+#inventory_transfer .inventory_transfer_header .inventory_transfer_box{ float: left;height: 50px; }
+#inventory_transfer .inventory_transfer_box .inventory_transfer_ul{ height: 50px;margin: 0;width: 100%;  }
+#inventory_transfer .inventory_transfer_ul li{ height: 50px;float: left;width: 115px;}
+#inventory_transfer .inventory_transfer_ul li a{ height: 50px;width: 100%;display: block;line-height: 50px;text-align: center;color: #9e9e9e;font-size: 14px;padding: 5px 10px 0 10px; }
+#inventory_transfer .inventory_transfer_ul li.selected a{ background: #f7f7f7;color: #424242;border-top: 5px solid #8cc152;padding: 0 10px}
+#inventory_transfer .inventory_transfer_ul li a:hover{ background: #f7f7f7;color: #424242;border-top: 5px solid #8cc152;padding: 0 10px}
+#inventory_transfer .inventory_transfer_content_wap{ width: 100%;background: #f7f7f7; }
+#inventory_transfer .inventory_transfer_content{ width: 1280px;margin: 0 auto;background:#f7f7f7; padding: 10px 30px; }
+#inventory_transfer .inventory_transfer_demand{ width: 100%;padding: 10px 20px 20px 20px; overflow: hidden;}
+#inventory_transfer .inventory_transfer_header{width: 100%;background-color: #ffffff;}
+#inventory_transfer .inventory_transfer_title ul{height: 41px;}
+#inventory_transfer .inventory_transfer_title ul li{height: 40px;float: left;line-height: 40px;font: 14px;margin: 0 20px;line-height: 60px;}
+#inventory_transfer .inventory_transfer_title ul li a{height: 40px;width: 100%;display: block;line-height: 40px;text-align: center;color: #9e9e9e;font-size: 14px;padding: 0 0 1px 0;}
+#inventory_transfer .inventory_transfer_title ul li.selected a{ color: #424242;border-bottom: 3px solid #8cc152;padding: 0;}
+#inventory_transfer .inventory_transfer_title ul li a:hover{ color: #424242;border-bottom: 3px solid #8cc152;padding: 0;cursor: pointer;}
+#inventory_transfer .inventory_transfer_shortcut{float: left;width: 10%;background-color: #ffffff;}
+#inventory_transfer .inventory_transfer_shortcut h2{font-size: 20px;padding-left: 10px;}
+#inventory_transfer .inventory_transfer_shortcut ul{margin-top: 20px;}
+#inventory_transfer .inventory_transfer_shortcut ul li{margin: 10px 5px;text-align: center;}
+#inventory_transfer .inventory_transfer_shortcut ul li:hover{cursor: pointer;}
+#inventory_transfer .inventory_transfer_shortcut ul li a{color: #424242;display: block;}
+#inventory_transfer .inventory_transfer_shortcut ul li.selected{border-left: solid 3px #1fbcd2;}
+#inventory_transfer .inventory_transfer_handle{/* float: right; */width: 88%;background-color: #ffffff;padding-left: 15px;}
+#inventory_transfer .inventory_transfer_result{width: 100%;margin-top: 20px;}
+#inventory_transfer .inventory_transfer_table{ width: 100%;border: 1px #dbdbdb solid; margin-bottom: 40px;}
+#inventory_transfer .inventory_transfer_table tr{ height: 30px;width: 100%; }
+#inventory_transfer .inventory_transfer_table thead tr{ background: #c9c9c9; height: 36px;}
+#inventory_transfer .inventory_transfer_table tbody tr{ border-bottom: 1px solid #eee; height: 40px;}
+#inventory_transfer .inventory_transfer_table tr:last-child{ border-bottom: none; }
+#inventory_transfer .inventory_transfer_table tr th{ height: 30px;line-height: 30px;font-size: 12px;font-weight:normal;text-align: center; }
+#inventory_transfer .inventory_transfer_table tr th:first-child{ padding-left: 30px;text-align: left; }
+#inventory_transfer .inventory_transfer_table tr td:first-child{ padding-left: 30px;text-align: left; }
+#inventory_transfer .inventory_transfer_table tr td{ height: 30px;line-height: 30px;font-size: 12px;text-align: center; }
+#inventory_transfer .inventory_transfer_sreach{margin-top: 30px;margin-bottom: 50px;}
+#inventory_transfer .inventory_transfer_sreach div{margin: 10px 0;}
+#inventory_transfer .inventory_transfer_sreach span{margin-right: 14px;color: #424242;}
+#inventory_transfer .inventory_transfer_sreach select{height: 30px;width: 65px;background-color: #c0c0c0}
+#inventory_transfer .inventory_transfer_sreach input{width: 150px;height: 30px;}
+#inventory_transfer .inventory_transfer_sreach input.checklist{width: 13px;height: 13px;margin-left: 14px;}
+#inventory_transfer .inventory_transfer_info{margin-bottom: 20px}
+#inventory_transfer .inventory_transfer_info div{margin: 10px 0;}
+#inventory_transfer .inventory_transfer_info span{margin-right: 10px;}
+#inventory_transfer .transfer_status,#inventory_transfer .transfer_site{height: 36px;width: 200px;background-color: #f7f7f7;text-indent: 10px;}
+#inventory_transfer .tarnsfer_date{width: 130px;height: 36px;}
+#inventory_transfer .submit{ height: 30px;line-height: 30px;background: #1fbcd2;color: #ffffff;font-size: 12px;display: block;width: 80px;text-align: center;padding: 0 10px;margin-top: 20px; }
+#inventory_transfer .transfer_count{width: 120;height: 30px;}
+#inventory_transfer .selected_product{overflow: hidden;}
+#inventory_transfer .selected_product_id{line-height: 36px;display: inline-block;float: left;}
+#inventory_transfer .selected_product_id li{width:140px !important;text-align:center;float: left;margin-left: 15px;height: 36px;line-height: 36px;width: auto;background-color: #caedf2;border: dashed 1px #1fbcd2;padding: 0 10px;}
+#product_id{display: inline-block;float: left;}
+#sreach{cursor: pointer;margin-left: 50px;display: inline-block;width: 50px;height: 40px;background-color: #c0c0c0;padding:0 5px;line-height: 40px;text-align: center;color: #424242;}

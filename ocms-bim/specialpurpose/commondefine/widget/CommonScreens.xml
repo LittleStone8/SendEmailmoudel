@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+        
+    <screen name="main-decorator">
+        <section>
+            <actions>
+            	<service service-name="getHomeApplications" result-map="result"></service>
+            	<set field="imei" from-field="result.imei"/>
+                <set field="apps" from-field="result.apps"/>
+                <set field="currenttime" from-field="result.currenttime"/>
+                <set field="timeZoneId" from-field="result.timeZoneId"/>
+                <set field="rawOffset" from-field="result.rawOffset"/>
+                <set field="timeNow" from-field="result.timeNow"/>
+                <set field="isShip" from-field="result.isShip"/>
+                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+                <set field="piwikHost" from-field="result.piwikHost"/>
+                <set field="piwikPort" from-field="result.piwikPort"/>
+                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="yiwill-decorator">
+        <section>
+            <actions>
+          	     <service service-name="getHomeApplications" result-map="result"></service>
+            	<set field="imei" from-field="result.imei"/>
+                <set field="apps" from-field="result.apps"/>
+                <set field="currenttime" from-field="result.currenttime"/>
+                <set field="timeZoneId" from-field="result.timeZoneId"/>
+                <set field="rawOffset" from-field="result.rawOffset"/>
+                <set field="timeNow" from-field="result.timeNow"/>
+                <set field="isShip" from-field="result.isShip"/>
+                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+                <set field="piwikHost" from-field="result.piwikHost"/>
+                <set field="piwikPort" from-field="result.piwikPort"/>
+                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/yw_header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    
+    <screen name="yiwill-decorator-new">
+        <section>
+            <actions>
+                  	<service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/yw_new_header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_new_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="yiwill-decorator-item">
+        <section>
+            <actions>
+            	<service service-name="getHomeApplications" result-map="result"></service>
+            	<set field="imei" from-field="result.imei"/>
+                <set field="apps" from-field="result.apps"/>
+                <set field="currenttime" from-field="result.currenttime"/>
+                <set field="timeZoneId" from-field="result.timeZoneId"/>
+                <set field="rawOffset" from-field="result.rawOffset"/>
+                <set field="timeNow" from-field="result.timeNow"/>
+                <set field="isShip" from-field="result.isShip"/>
+                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+                <set field="piwikHost" from-field="result.piwikHost"/>
+                <set field="piwikPort" from-field="result.piwikPort"/>
+                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/yw_item_header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_item_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="yiwill-decorator-pos">
+        <section>
+            <actions>
+              		<service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/none_header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/none_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="yiwill-decorator-main">
+        <section>
+            <actions>
+	             <service service-name="getHomeApplications" result-map="result"></service>
+		            	<set field="imei" from-field="result.imei"/>
+		                <set field="apps" from-field="result.apps"/>
+		                <set field="currenttime" from-field="result.currenttime"/>
+		                <set field="timeZoneId" from-field="result.timeZoneId"/>
+		                <set field="rawOffset" from-field="result.rawOffset"/>
+		                <set field="timeNow" from-field="result.timeNow"/>
+		                <set field="isShip" from-field="result.isShip"/>
+		                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+		                <set field="piwikHost" from-field="result.piwikHost"/>
+		                <set field="piwikPort" from-field="result.piwikPort"/>
+		                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/none_header.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_new_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+     <screen name="yiwill-decorator-noNavbar">
+        <section>
+            <actions>
+	            <service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/yw_header_nobar.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="yiwill-decorator-new-noNavbar">
+        <section>
+            <actions>
+              		<service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                 <platform-specific>
+	                 <html>
+	                	 <html-template location="component://commondefine/includes/yw_new_header_nobar.ftl"/>
+	                 </html>
+                 </platform-specific>
+                 <decorator-section-include name="body"/>
+                 <platform-specific>
+                  <html>
+                 		 <html-template location="component://commondefine/includes/yw_new_footer.ftl"/>
+                  </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+     <screen name="lgoin">
+        <section>
+            <actions>
+            <service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="yiwill-decorator-new-noNavbar" location="component://commondefine/widget/CommonScreens.xml">
+                    <decorator-section name="body">
+                        <platform-specific>
+		                  <html>
+		                 		 <html-template location="component://commondefine/includes/login.ftl"/>
+		                  </html>
+                 		</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
+    
+    <screen name="Main">
+        <section>
+            <actions>
+           			<service service-name="getHomeApplications" result-map="result"></service>
+	            	<set field="imei" from-field="result.imei"/>
+	                <set field="apps" from-field="result.apps"/>
+	                <set field="currenttime" from-field="result.currenttime"/>
+	                <set field="timeZoneId" from-field="result.timeZoneId"/>
+	                <set field="rawOffset" from-field="result.rawOffset"/>
+	                <set field="timeNow" from-field="result.timeNow"/>
+	                <set field="isShip" from-field="result.isShip"/>
+	                <set field="SystemSettingsUomid" from-field="result.SystemSettingsUomid"/>
+	                <set field="piwikHost" from-field="result.piwikHost"/>
+	                <set field="piwikPort" from-field="result.piwikPort"/>
+	                <set field="piwikSiteId" from-field="result.piwikSiteId"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="yiwill-decorator" location="component://commondefine/widget/CommonScreens.xml">
+                    <decorator-section name="body">
+                        <platform-specific>
+		                  <html>
+		                 		 <html-template location="component://commondefine/includes/testbody.ftl"/>
+		                  </html>
+                 		</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+</screens>
+

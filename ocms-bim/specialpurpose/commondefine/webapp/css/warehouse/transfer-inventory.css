@@ -1,0 +1,178 @@
+#newTransferInventory{width:100%;min-height:100%;height:100%;margin-top:16px;}
+#newTransferInventory .newTransferInventory_box{min-width:1280px;margin:0 auto;padding-bottom:55px;position:relative;left:10px;}
+.item_warehouse{position:relative;width:1280px;margin:0 auto;}
+.item_warehouse>div {top:-40px;right:20px;position:absolute; }
+.item_warehouse span,.item_warehouse a{font-size:12px;}
+.warehouse_text{font-weight:bold;}
+.newTransferInventory_box .left_column { position: absolute;top: 0;left: 0;width: 168px;background:#ffffff; }
+.newTransferInventory_box .right_column { padding-right:15px;}
+.newTransferInventory_box .right_list { width:415px;position: absolute;top: 0;right: 5px;background:#ffffff;overflow-y:auto; }
+.newTransferInventory_box .right_hide { display:none; }
+.newTransferInventory_box .left_column .left_column_tit{text-align:center;height:45px;line-height:45px;font-weight:bold;font-size:18px;background:#fff;width:100%;}
+.newTransferInventory_box .left_column .left_column_content{background-color:#fff;padding-bottom:20px;}
+.newTransferInventory_box .left_column .left_column_content li{height:30px;line-height:30px;margin:3px;font-size:12px;text-align: center}
+.newTransferInventory_box .left_column .left_column_content li a{color:#333;display:block;width:100%;}
+.newTransferInventory_box .menu_active{background: #F7F7F7;border-left:3px solid #1FBCD2;}
+.newTransferInventory_content{ background:#ffffff;padding:0 10px 10px 10px; }
+.newTransferInventory_content .newTransferInventory_tit{ line-height:45px;width:100%;font-size:18px;color:#424242;border-bottom:1px solid #dbdbdb;height:45px;font-weight:bold; }
+.newTransferInventory_content .newTransferInventory_tab { margin-top:10px; }
+.newTransferInventory_content .newTransferInventory_tab a { position:relative; }
+.newTransferInventory_content .newTransferInventory_tab .receiveNum{ position:absolute;top:4px;right:4px;width:10px;height:10px;font-style: normal;cursor:pointer;border-radius:50%;background:#e50038;display:none; }
+.newTransferInventory_content .newTransferInventory_list{ width:100%; }
+.newTransferInventory_list .sent_search,
+.newTransferInventory_list .receive_search,
+.newTransferInventory_list .picking_search,
+.newTransferInventory_list .transferInventory_search{ width:100%;padding-top:10px; }
+.newTransferInventory_list .sent_search .sent_search_item,
+.newTransferInventory_list .receive_search .receive_search_item,
+.newTransferInventory_list .picking_search .picking_search_item,
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item{ float:left;margin-bottom:10px;width:32%; }
+.newTransferInventory_list .sent_search .last_item,
+.newTransferInventory_list .receive_search .last_item{ width:35% !important; }
+.newTransferInventory_list .sent_search .sent_search_item .sent_search_span,
+.newTransferInventory_list .receive_search .receive_search_item .receive_search_span,
+.newTransferInventory_list .picking_search .picking_search_item .picking_search_span,
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item .transferInventory_search_span{ height:30px;display:inline-block;line-height:30px;padding-right:5px;text-align:right;float:left; }
+.newTransferInventory_list .sent_search .sent_search_item input,
+.newTransferInventory_list .receive_search .receive_search_item input,
+.newTransferInventory_list .picking_search .picking_search_item input,
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item input,
+.newTransferInventory_list .receive_search .receive_search_item select,
+.newTransferInventory_list .sent_search .sent_search_item select,
+.newTransferInventory_list .picking_search .picking_search_item select{ height:30px;display:inline-block;line-height:30px;width:150px;border:1px solid #dbdbdb;font-size:12px;padding-left:5px;float:left; }
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item input{ width:36%; }
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item .product_select{float:left; height:30px;display:inline-block;line-height:30px;font-size:12px;border:1px solid #dbdbdb;margin-right:3px;width:24%; }
+.newTransferInventory_list .sent_search .sent_search_item span,
+.newTransferInventory_list .receive_search .receive_search_item span{ font-size:12px; }
+.newTransferInventory_list .receive_search .receive_search_item .receive_warehouse,
+.newTransferInventory_list .sent_search .sent_search_item .sent_warehouse{ width:200px; }
+.newTransferInventory_list .sent_search .sent_search_item .sent_date,
+.newTransferInventory_list .receive_search .receive_search_item .receive_date { width:170px; }
+.newTransferInventory_list .sent_search .sent_search_item a,
+.newTransferInventory_list .receive_search .receive_search_item a,
+.newTransferInventory_list .picking_search .picking_search_item a,
+.newTransferInventory_list .transferInventory_search .transferInventory_search_item a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;margin-left:20px; }
+.newTransferInventory_list .sent_table,
+.newTransferInventory_list .receive_table,
+.newTransferInventory_list .picking_table,
+.newTransferInventory_list .transferInventory_table{width:100%;margin-top:10px; }
+.newTransferInventory_list table{width:100%;border:1px #dbdbdb solid;}
+.newTransferInventory_list table thead tr{ height:30px;width:100%; background:#dbdbdb; }
+.newTransferInventory_list table thead th { text-align:center;font-size:12px; }
+.newTransferInventory_list table thead th:last-child{ width:120px; }
+.newTransferInventory_list table thead input { margin:0 !important; }
+.newTransferInventory_list table tbody tr{ height:30px; }
+.newTransferInventory_list table tbody td{ text-align:center;font-size:12px;position:relative; }
+.newTransferInventory_list table tbody td:last-child{ width:120px; }
+.newTransferInventory_list table tbody td .transferQty_content { width:120px;height:24px;line-height:24px; }
+.newTransferInventory_list table tbody td .transferQty_content a{ float:left;width:24px;height:24px;display:inline-block;line-height:24px;font-size:14px;border:1px solid #dbdbdb; }
+.newTransferInventory_list table tbody td .transferQty_content input{ float:left;width:90px;height:24px;margin-left:14px;line-height:24px;border-left:none;border-right:none;border:1px solid #dbdbdb;/* border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb; */text-align:center; }
+.newTransferInventory_list table tbody tr{border-bottom: 1px solid #eee;}
+.newTransferInventory_list table tbody tr:last-child{border-bottom: none;}
+.newTransferInventory_list table tbody tr:hover{background:#e9e9e9;}
+.newTransferInventory_list table tbody tr .comments{ width:100px;overflow: hidden;white-space:nowrap; text-overflow:ellipsis;display:inline-block; } 
+.newTransferInventory_list table tbody tr .commentsTextarea{ width:220px; display:none;z-index:99;resize:none; }
+.newTransferInventory_list .picking_operator{ width:100%;height:30px;margin-top:10px;}
+.newTransferInventory_list .picking_operator a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;}
+.newTransferInventory_list .footer_page{ height:30px;width:100%; }
+.newTransferInventory_list .footer_total{ float:left;height:30px;line-height:30px; }
+.newTransferInventory_list .operator_list{ width:100%;height:30px;}
+.newTransferInventory_list .operator_list a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;}
+.newTransferInventory_list .footer_page .sent_total_size,
+.newTransferInventory_list .footer_page .receive_total_size,
+.newTransferInventory_list .footer_page .picking_total_size,
+.newTransferInventory_list .footer_page .transferInventory_total_size{ font-style:normal }
+.newTransferInventory_list .sent_page,
+.newTransferInventory_list .receive_page,
+.newTransferInventory_list .picking_page,
+.newTransferInventory_list .transferInventory_page{ margin-top:10px;} 
+.newTransferInventory_list .paging{float:right;}
+.newTransferInventory_list .paging li{float:left;width:30px;height:30px;line-height:30px;text-align: center}
+.newTransferInventory_list .goPage input{width:35px;height:25px;line-height:25px;padding-left:5px !important;border:1px solid #dbdbdb;background-color:#F7F7F7;margin-left:5px !important;}
+.newTransferInventory_list .goPage a{font-size:12px;}
+.newTransferInventory_list .goPage{float:right;line-height:30px;margin-left: 10px;font-size: 12px;}
+.newTransferInventory_list .page_home{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-8px -123px;}
+.newTransferInventory_list .page_prev{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-31px -123px;}
+.newTransferInventory_list .page_next{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-96px -123px;}
+.newTransferInventory_list .page_final{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-117px -123px;}
+.newTransferInventory_list .sent_page .active,
+.newTransferInventory_list .receive_page .active,
+.newTransferInventory_list .picking_page .active,
+.newTransferInventory_list .transferInventory_page .active{background-color:#1FBCD2;border-radius:5px;}
+.newTransferInventory_list .sent_page .active a,
+.newTransferInventory_list .receive_page .active a,
+.newTransferInventory_list .picking_page .active a,
+.newTransferInventory_list .transferInventory_page .active a{color:#fff;}
+.newTransferInventory_list .hide_enter_qty { display : none; }
+.transferInventory_warehouse { width:100%;height:30px; }
+.transferInventory_warehouse .transferInventory_warehouse_item { float:left;margin-right:20px;height:30px;}
+.transferInventory_warehouse .transferInventory_warehouse_span{ float:left;height:30px;line-height:30px;padding-right:10px; }
+.transferInventory_warehouse .transferInventory_warehouse_item select{ float:left;width:200px;height:30px;line-height:30px; }
+.transferInventory_warehouse a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:28px;line-height:28px; }
+.right_list .transferListTabContent { width:100%;margin-bottom:10px;border:1px solid #dbdbdb; }
+.right_list .transferListTabContent .warehouseHead{ height:30px;padding-left:10px;}
+.right_list .transferListTabContent .warehouseName{ height:30px;line-height:30px;float:left; }
+.right_list .transferListTabContent .warehouseIcon{ float:right;width:20px;height:20px;background: url("/commondefine_img/create_product/delete.png") no-repeat center center;cursor: pointer;border-left:1px solid #dbdbdb;;border-bottom:1px solid #dbdbdb; }
+.right_list .transferListTabContent .warehouseContent{ width:100%; }
+.right_list .transferListTabContent .warehouseContent table{width:100%;}
+.right_list .transferListTabContent .warehouseContent table thead tr{ height:30px;width:100%; background:#dbdbdb; }
+.right_list .transferListTabContent .warehouseContent table thead th { text-align:center;font-size:12px; }
+.right_list .transferListTabContent .warehouseContent table tbody tr{ height:30px; border-bottom:1px solid #dbdbdb;}
+.right_list .transferListTabContent .warehouseContent table tbody td{ text-align:center;font-size:12px; }
+.right_list .transferListTabContent .warehouseContent table tbody td .list_icon{ width:12px;height:12px;background: url("/commondefine_img/create_product/delete.png") no-repeat center center;cursor: pointer;float:right;margin-right:5px; }
+.right_list .transferListTabContent .footerIndex { width:100%;height:30px; }
+.right_list .transferListTabContent .footerIndex span{ float:right;width:30px;height:30px;line-height:30px;display:block;background:#1FBCD2;font-size:14px;text-align:center;color:#fff; }
+.right_list .right_list_operator { width:100%; height:30px;margin-bottom:10px; }
+.right_list .right_list_operator a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;margin-right:15px; }
+.newTransferInventory_list .operator_list a.no_checked,
+.right_list .right_list_operator a.no_checked,
+.transferInventory_imei .transferInventory_imei_operator a.no_checked{ background:#eeeeee;color:#424242; }
+#confirmTable { width:100%;border:1px solid #ccc;text-align:center; }
+#confirmTable tr { border-bottom:1px solid #ccc;height:20px;line-height:20px; }
+#confirmTable td:first-child { border-right:1px solid #ccc; }
+
+/* imei */
+.transferInventory_imei{ display:none;padding:10px; }
+.imei_transferListTabContent{ margin-bottom:10px; }
+.transferInventory_imei_content .print_transferListTabContent{ margin-bottom:10px; }
+.transferInventory_imei_title{ width:100%; height:30px; }
+.transferInventory_imei_title .returnPage{ height:30px;display:inline-block;font-size:14px;line-height:30px;padding:0 5px;color:#337ab7;cursor:pointer; }
+.transferInventory_imei_operator{ width:100%;height:30px;line-height:30px;font-size:14px; }
+.transferInventory_imei_operator a{ padding:0 10px;height:30px;line-height:30px;font-size:12px;color:#ffffff;background:#1FBCD2;display:inline-block; }
+.imei_warehouseName { height:30px;width:100%; }
+.noTransfer{ color:#e50038; }
+.transferInventory_imei .openScan{ display:inline-block;width:100%;height:30px;line-height:30px;color:#1FBCD2; }
+.imei_warehouseName span{ height:30px;display:inline-block;line-height:30px;padding-right:10px;float:left; }
+.imei_warehouseName .inputList{ width:20px;height:20px;margin-top:5px; }
+.imei_warehouseTable .productDesc{ width:100%; }
+.imei_warehouseTable .productImei{ width:80%; }
+.imei_warehouseTable .productImeiNum{ margin-left:10px;color:#e50038; }
+.redBorder{ border:1px solid #e50038; }
+.select2-selection.select2-selection--single{ border:1px solid #dbdbdb;border-radius:0; }
+
+/* picking */
+#editImeiDialog{ width:100%;position:relative; }
+.imeiTitle { width:100%;height:30px;line-height:30px;border-bottom:1px solid #dbdbdb; }
+.returnIcon { position:absolute;width:12px;height:12px;background: url("/commondefine_img/create_product/delete.png") no-repeat center center;cursor: pointer;right:0;top:0; }
+.imeiContent { width:100%;height:30px;margin:10px 0; }
+.imeiContent span{ padding-right:10px;display:inline-block;height:30px;line-height:30px; }
+.imeiContent input { width:300px;height:30px;line-height:30px;padding:0 0 0 5px;border:1px solid #dbdbdb; }
+.imeiContent input:focus{ border:1px solid #1FBCD2 !important;box-shadow: 0 0 5px #1FBCD2; }
+.imeiOperation { width:100%;height:41px;padding:10px 0 0 0;border-top:1px solid #dbdbdb;margin-top:20px; }
+.imeiOperation span{ height:30px;display:inline-block;line-height:30px; }
+.imeiOperation .totalImei{ float:left; }
+.imeiOperation .operatorImei{ float:right; }
+.imeiOperation .totalImei em { font-style:normal; }
+.imeiOperation .operatorImei a{ padding: 0 10px;display:inline-block;color:#fff; }
+.imeiOperation .operatorImei .clearAllBtn { background:#dbdbdb; }
+.imeiOperation .operatorImei .saveBtn { background:#1FBCD2; }
+.currentContent{ padding:10px 0; }
+.errorMessageList{ width:100%;color:#e50038;font-size:12px;margin-bottom:10px; }
+.imeiGroup{display:inline-block;position:relative;padding-right:10px;margin-bottom:10px; }
+.imeiGroup .imeiNumber{ background:#dbdbdb;padding:5px; }
+.imeiGroup .imeiClose{display:inline-block;position:absolute;top:-5px;right:-1px;width:21px;height:21px;background: url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-175px -52px;cursor: pointer;}
+.imeiLoadingContent{ width:100%;height:100%;display:none; }
+.imeiLoadingContent .imeiLoadingBg{ position:absolute;top:0;left:0;width:100%;height:100%;background-color:#f9f9f9; opacity:0.5;filter:alpha(opacity=50);*zoom:1; }
+.imeiLoadingContent .imeiLoadingIcon{ position:absolute;top:50%;left:50%;width:20px;height:20px;margin-top:-10px;margin-left:-10px;display:inline-block; background:url("/commondefine_img/loading_2.gif") no-repeat left center }
+
+.ui-popup.ui-popup-modal{ top:50% !important;transform:translate(0, -50%) !important;}

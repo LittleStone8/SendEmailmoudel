@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="ALL operations in the Report Component." permissionId="REPORT_ADMIN"/>
+    <SecurityPermission description="报表模块二级菜单 销售报表 权限.." permissionId="REPMENU_SALE"/>
+    <SecurityPermission description="报表模块二级菜单 库存报表 权限.." permissionId="REPMENU_INV"/>
+    <SecurityPermission description="报表模块二级菜单运营商 销售报表 权限.." permissionId="REPMENU_OP_SALE"/>
+    <SecurityPermission description="报表模块二级菜单运营商 库存报表 权限." permissionId="REPMENU_OP_INV"/>
+    
+ <!--    	4个 菜单访问权限 安全组    -->
+    <SecurityGroup description="销售报表管理员" groupId="REPMENU_SALE"/>
+    <SecurityGroup description="库存报表管理员" groupId="REPMENU_INV"/>
+    <SecurityGroup description="运营商销售报表管理员" groupId="REPMENU_OP_SALE"/>
+    <SecurityGroup description="运营商库存报表管理员" groupId="REPMENU_OP_INV"/>
+    
+    <SecurityGroupPermission groupId="REPMENU_SALE" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="REPMENU_SALE" permissionId="REPMENU_SALE"/>
+    <SecurityGroupPermission groupId="REPMENU_INV" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="REPMENU_INV" permissionId="REPMENU_INV"/>
+    <SecurityGroupPermission groupId="REPMENU_OP_SALE" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="REPMENU_OP_SALE" permissionId="REPMENU_OP_SALE"/>
+    <SecurityGroupPermission groupId="REPMENU_OP_INV" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="REPMENU_OP_INV" permissionId="REPMENU_OP_INV"/>
+    
+   
+   <!--     FULLADMIN安全组中有所有的报表菜单权限  -->
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="REPMENU_SALE"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="REPMENU_INV"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="REPMENU_OP_SALE"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="REPMENU_OP_INV"/>   
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="REPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="REPMENU_SALE"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="REPMENU_INV"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="REPMENU_OP_SALE"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="REPMENU_OP_INV"/>
+   
+<!--    	9个 报表数据权限 安全组    -->   
+    <SecurityGroup description="全管理员报表管理员" groupId="REPDATA_MAX"/>
+    <SecurityGroup description="BAN全店报表管理员" groupId="REPDATA_BAN_MAS"/>
+    <SecurityGroup description="BAN单店数据安全组" groupId="REPDATA_BAN_SIN"/>
+    <SecurityGroup description="MTN全店报表管理员" groupId="REPDATA_MTN_MAS"/>
+    <SecurityGroup description="MTN单店数据安全组" groupId="REPDATA_MTN_SIN"/>
+    <SecurityGroup description="AIR全店报表管理员" groupId="REPDATA_AIR_MAS"/>
+    <SecurityGroup description="AIR单店数据安全组" groupId="REPDATA_AIR_SIN"/>
+    <SecurityGroup description="UTL全店报表管理员" groupId="REPDATA_UTL_MAS"/>
+    <SecurityGroup description="UTL单店数据安全组" groupId="REPDATA_UTL_SIN"/>
+  
+  
+    <UserLoginSecurityGroup groupId="REPDATA_MAX" userLoginId="admin" fromDate="2001-01-01 12:00:00.0"/>
+
+</entity-engine-xml>

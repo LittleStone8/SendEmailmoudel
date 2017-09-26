@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+	<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+	<script type="text/javascript">
+		
+		$(function () {
+		
+		
+            var json = [
+			{ name: "张三", sex: "男" , age: "11", like: "玩"}, 
+			{ name: "李四", sex: "女" , age: "11", like: "学习"}, 
+			{ name: "王五", sex: "gay", age: "11" , like: "玩"}];  //自定义一个json数组
+			
+			
+			$("#b1").click(function(){
+			$("td").filter("#td").remove();
+			$("div").filter("#tt").remove();
+			  $.each(json, function (index, obj) {
+				$("body").append($("<div id='tt'></div>"));
+				$("#t1");
+				$("body").append($("<td id='td' width=150><span class='tableheadtext'>"+obj.name+"</span></td>"))
+				.append($("<td id='td' width=150><span class='tableheadtext'>"+obj.sex+"</span></td>"))
+				.append($("<td id='td' width=150><span class='tableheadtext'>"+obj.age+"</span></td>"))
+				.append($("<td id='td' width=150><span class='tableheadtext'>"+obj.like+"</span></td>"));
+				$("#tt");
+				});
+			});	
+		})
+	</script>
+	
+	<script>
+
+	window.onload=function(){
+		var url = window.location.href;
+		var locationSeqId = url.split("=",2)[1];
+		document.getElementById("locationSeqId").value=locationSeqId;
+	}
+
+</script> 
+	
+  </head>
+  
+  <body>
+  	
+	
+<div class="subSectionBlock">
+  <div class="form">
+
+
+
+	<form name="LookupProduct" method="post" action="">
+		<input type="hidden" name="noConditionFind" value="Y"/>
+		<input name="from" id="from" type=hidden value="来自位置"/>
+		<table>
+
+<tr>
+  <td align="right" class="tableheadtext">产品标识</td>
+  <td style="padding-left: 20px;">
+<select name="productId_op" class="selectBox">
+  <option  value="equals">等于</option>
+  <option selected="selected" value="like">开头是</option>
+  <option  value="contains">包含</option>
+</select>
+  <input id="productId" name="productId" type="text" size="25" maxlength="" class="inputBox" value=""  onChange="" />
+  <input name="productId_ic" value="Y" checked="checked" type="checkbox">忽略大小写
+  </td>
+</tr>
+<tr>
+  <td align="right" class="tableheadtext">品牌名称</td>
+  <td style="padding-left: 20px;">
+<select name="brandName_op" class="selectBox">
+  <option  value="equals">等于</option>
+  <option selected="selected" value="like">开头是</option>
+  <option  value="contains">包含</option>
+</select>
+  <input id="brandName" name="brandName" type="text" size="25" maxlength="" class="inputBox" value=""  onChange="" />
+  <input name="brandName_ic" value="Y" checked="checked" type="checkbox">忽略大小写
+  </td>
+</tr>
+<tr>
+  <td align="right" class="tableheadtext">内部名称</td>
+  <td style="padding-left: 20px;">
+<select name="internalName_op" class="selectBox">
+  <option  value="equals">等于</option>
+  <option  value="like">开头是</option>
+  <option selected="selected" value="contains">包含</option>
+</select>
+  <input id="internalName" name="internalName" type="text" size="25" maxlength="" class="inputBox" value=""  onChange="" />
+  <input name="internalName_ic" value="Y" checked="checked" type="checkbox">忽略大小写
+  </td>
+</tr>
+<tr>
+  <td align="right" class="tableheadtext">关键字</td>
+  <td style="padding-left: 20px;">
+<select name="keyword_op" class="selectBox">
+  <option  value="equals">等于</option>
+  <option selected="selected" value="like">开头是</option>
+  <option  value="contains">包含</option>
+</select>
+  <input id="keyword" name="keyword" type="text" size="25" maxlength="" class="inputBox" value=""  onChange="" />
+  <input name="keyword_ic" value="Y" checked="checked" type="checkbox">忽略大小写
+  </td>
+</tr>
+
+    <tr>
+      <td align="right">
+  <select id="goodIdentificationTypeId" name="goodIdentificationTypeId" class="inputBox" onChange=""  >
+    <option value="">任何</option>
+      <option  value="ASIN">
+        ASIN
+      </option>
+      <option  value="EAN">
+        EAN
+      </option>
+      <option  value="GOOGLE_ID">
+        Google Id
+      </option>
+      <option  value="ISBN">
+        ISBN
+      </option>
+      <option  value="LOC">
+        Library of Congress
+      </option>
+      <option  value="MANUFACTURER_ID_NO">
+        Model Number
+      </option>
+      <option  value="MODEL_YEAR">
+        Model Year
+      </option>
+      <option  value="OTHER_ID">
+        Other
+      </option>
+      <option  value="SKU">
+        SKU
+      </option>
+      <option  value="UPCA">
+        UPCA
+      </option>
+      <option  value="UPCE">
+        UPCE
+      </option>
+  </select>
+      </td>
+      <td style="padding-left: 20px;">
+<select name="idValue_op" class="selectBox">
+  <option  value="equals">等于</option>
+  <option selected="selected" value="like">开头是</option>
+  <option  value="contains">包含</option>
+</select>
+  <input id="idValue" name="idValue" type="text" size="25" maxlength="" class="inputBox" value=""  onChange="" />
+  <input name="idValue_ic" value="Y" checked="checked" type="checkbox">忽略大小写
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right" class="tableheadtext">产品类型</td>
+      <td style="padding-left: 20px;">
+  <select id="productTypeId" name="productTypeId" class="inputBox" onChange=""  >
+    
+      <option  value="AGGREGATED">
+        Configurable Good
+      </option>
+      <option  value="AGGREGATED_CONF">
+        Configurable Good Configuration
+      </option>
+      <option  value="SERVICE_CONTRACT_MFG">
+        Contracted Manufacturing Service
+      </option>
+      <option  value="DIGITAL_GOOD">
+        Digital Good
+      </option>
+      <option selected="selected" value="FINISHED_GOOD">
+        Finished Good
+      </option>
+      <option  value="FINDIG_GOOD">
+        Finished&#47;Digital Good
+      </option>
+      <option  value="FIXED_ASSET">
+        Fixed Asset
+      </option>
+      <option  value="ASSET_USAGE">
+        Fixed Asset Usage
+      </option>
+      <option  value="GOOD">
+        Good
+      </option>
+      <option  value="MARKETING_PKG">
+        Marketing Package
+      </option>
+      <option  value="MARKETING_PKG_AUTO">
+        Marketing Package&#58; Auto Manufactured
+      </option>
+      <option  value="MARKETING_PKG_PICK">
+        Marketing Package&#58; Pick Assembly
+      </option>
+      <option  value="EBAY_ITEM">
+        Product From eBay
+      </option>
+      <option  value="PURCH_PKG_AUTO">
+        Purchasing Package
+      </option>
+      <option  value="RAW_MATERIAL">
+        Raw Material
+      </option>
+      <option  value="SERVICE">
+        Service
+      </option>
+      <option  value="SUBASSEMBLY">
+        Subassembly
+      </option>
+      <option  value="SUPPLIES">
+        Supplies
+      </option>
+      <option  value="WIP">
+        Work In Process
+      </option>
+  </select>
+      </td>
+    </tr>
+
+	<tr>
+		<td></td>
+		<td style="padding-left: 20px;">
+	 		<input id="locationSeqId" name="locationSeqId" type=" "  value="" onChange="" />
+	 	</td>
+	</tr>
+	
+    <tr>
+      <td></td>
+      <td style="padding-left: 20px;">
+  <input id="submit" type="submit" value="查找" class="smallSubmit" onclick="formSubmit();" />
+      </td>
+    </tr>
+
+  </table>
+	</form>
+  </div>
+</div>
+
+<button id="b1">点击添加</button>
+
+<div class="subSectionBlock">
+
+ <table cellspacing="0" class="commonListTable">
+  <tr class="commonListTableHeader">
+   <td width=150 ><span class="tableheadtext">产品标识</span></td>
+   <td width=150 ><span class="tableheadtext">产品类型</span></td>
+   <td width=150 ><span class="tableheadtext">品牌名称</span></td>
+   <td width=150 ><span class="tableheadtext">内部名称</span></td>
+  </tr>
+ </table>
+</div>
+
+	
+	<table id="t1">
+		
+	</table>
+	
+  </body>
+</html>

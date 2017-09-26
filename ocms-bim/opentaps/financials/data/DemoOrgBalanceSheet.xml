@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) Open Source Strategies, Inc.
+ *
+ * Opentaps is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Opentaps is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Opentaps.  If not, see <http://www.gnu.org/licenses/>.
+ *  
+-->
+
+<!-- This file is an initial balance sheet file.  It can be used as a template for importing existing accounting information --> 
+
+<entity-engine-xml>
+    <!-- average cost of the initial inventory.  THIS MAY GET REMOVED AT SOME POINT -->
+  
+    <!-- lot level inventory values.  if you use average cost, just put in average cost for unitCost of all inventory items of a product 
+        for each organization (owner), like we're doing here  -->
+   
+    <!-- initial set of transactions and entries, in this case for importing inventory values.  -->
+   
+
+</entity-engine-xml>

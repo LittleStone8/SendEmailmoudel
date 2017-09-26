@@ -1,0 +1,170 @@
+#newAdjustQuantity{width:100%;min-height:100%;height:100%;margin-top:16px;}
+#newAdjustQuantity .newAdjustQuantity_box{width:1280px;margin:0 auto;padding-bottom:55px;position:relative;left:10px;}
+.item_warehouse{position:relative;width:1280px;margin:0 auto;}
+.item_warehouse>div {top:-40px;right:20px;position:absolute; }
+.item_warehouse span,.item_warehouse a{font-size:12px;}
+.warehouse_text{font-weight:bold;}
+.newAdjustQuantity_box .left_column { position: absolute;top: 0;left: 0;width: 168px;background:#ffffff; }
+.newAdjustQuantity_box .right_column { padding-right:15px;padding-left:186px;}
+.newAdjustQuantity_box .right_list { width:415px;position: absolute;top: 0;right: 5px;background:#ffffff;overflow-y:auto; }
+.newAdjustQuantity_box .right_hide { display:none; }
+.newAdjustQuantity_box .left_column .left_column_tit{text-align:center;height:45px;line-height:45px;font-weight:bold;font-size:18px;background:#fff;width:100%;}
+.newAdjustQuantity_box .left_column .left_column_content{background-color:#fff;padding-bottom:20px;}
+.newAdjustQuantity_box .left_column .left_column_content li{height:30px;line-height:30px;margin:3px;font-size:12px;text-align: center}
+.newAdjustQuantity_box .left_column .left_column_content li a{color:#333;display:block;width:100%;}
+.newAdjustQuantity_box .menu_active{background: #F7F7F7;border-left:3px solid #1FBCD2;}
+.newAdjustQuantity_content{ background:#ffffff;padding:0 10px 10px 10px; }
+.newAdjustQuantity_list .paging .active{background-color:#1FBCD2;border-radius:5px;}
+.newAdjustQuantity_list .paging .active a{color:#fff;}
+.newAdjustQuantity_content .newAdjustQuantity_tit{ line-height:45px;width:100%;font-size:18px;color:#424242;border-bottom:1px solid #dbdbdb;height:45px;font-weight:bold; }
+.newAdjustQuantity_content .newAdjustQuantity_tab { margin-top:10px; }
+.newAdjustQuantity_content .newAdjustQuantity_list{ width:100%; }
+.newAdjustQuantity_list .adjustQuantity_search,
+.newAdjustQuantity_list .receive_search,
+.newAdjustQuantity_list .transferInventory_search{ width:100%;padding-top:10px; }
+
+.newAdjustQuantity_list .adjustQuantity_search .adjust_product_add{width:35px;height:30px;line-height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-48px -4px;display: inline-block;}
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item{ margin-bottom:10px;}
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .search_item_div{float:left;width:33%;}
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .search_item_div:nth-of-type(2){float:left;width:23%;}
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .adjustQuantity_qoh{width:15px;height:30px;display:inline-block;vertical-align:bottom;margin-top:0px;}
+.newAdjustQuantity_list .adjustQuantity_search .last_item{ width:35% !important; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .adjustQuantity_search_span{ height:30px;display:inline-block;line-height:30px;padding-right:5px;text-align:left;float:left;font-size:12px; }
+/* .newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .adjustQuantity_span_qoh{width:100px;} */
+.newAdjustQuantity_list .adjustQuantity_search .adjust_row_input>input{ height:27px;display:inline-block;line-height:27px;width:143px;border:none;float:left; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_input{height:30px;display:inline-block;line-height:30px;width:190px;border:1px solid #dbdbdb;font-size:12px;padding-left:5px;float:left; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_select{height:30px;display:inline-block;line-height:30px;width:190px;border:1px solid #dbdbdb;}
+.newAdjustQuantity_list .transferInventory_search .transferInventory_search_item input{ width:115px; }
+.newAdjustQuantity_list .transferInventory_search .transferInventory_search_item .product_select{float:left; height:30px;display:inline-block;line-height:30px;font-size:12px;border:1px solid #dbdbdb;margin-right:3px; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item span{ font-size:12px; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .sent_warehouse{ width:200px; }
+.newAdjustQuantity_list .adjustQuantity_search .adjustQuantity_search_item .search_confirm{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;}
+.newAdjustQuantity_list .adjustQuantity_search .log_search_div{float:left;width:33%;}
+.newAdjustQuantity_list .adjust_row_input{float:left;height: 30px;line-height: 30px;float: left;width: 190px;padding-left: 5px !important;border-radius: 0;border: 1px solid #dbdbdb;}
+.newAdjustQuantity_list .adjustQuantity_table{width:100%;margin-top:10px; }
+.newAdjustQuantity_list .adjustQuantity_table_title{height:35px;line-height:35px;font-weight: bold;font-size: 16px;padding: 0 10px;}
+
+.newAdjustQuantity_list .title_content{ position:relative; }
+.newAdjustQuantity_list .icon_content{ position:absolute;top:0;height:30px; }
+.newAdjustQuantity_list .arrow_up{cursor:pointer;position:absolute;top:6px;display:inline-block;width:25px;height:8px;background:url("/commondefine_img/warehouse/adjust_icons.png") no-repeat bottom center;background-size: 40px 40px;}
+.newAdjustQuantity_list .arrow_down{cursor:pointer;position:absolute;bottom:7px;display:inline-block;width:25px;height:8px;background:url("/commondefine_img/warehouse/adjust_icons.png") no-repeat top center;background-size: 40px 40px;  }
+.newAdjustQuantity_list .no_up_active{background-position:5px 0px;}
+.newAdjustQuantity_list .no_down_active{background-position:-15px -9px;}
+.newAdjustQuantity_list .up_active{background-position:-15px 0px;}
+.newAdjustQuantity_list .down_active{background-position:5px -8px;}
+
+.newAdjustQuantity_list .adjust_table_box thead th:nth-child(2) .icon_content { right:17px;top:-5px; }
+.newAdjustQuantity_list .adjust_table_box thead th:nth-child(3) .icon_content { right:73px;top:-5px; }
+.newAdjustQuantity_list .adjust_table_box thead th:nth-child(5) .icon_content { right:26px;top:-5px; }
+.newAdjustQuantity_list .adjust_table_box thead th:nth-child(6) .icon_content { right:26px;top:-5px; }
+.newAdjustQuantity_list .log_table_box thead th:nth-child(2) .icon_content { right:20%;top:-5px; }
+.newAdjustQuantity_list .log_table_box thead th:nth-child(4) .icon_content { right:20%;top:-5px; }
+.newAdjustQuantity_list .log_table_box thead th:nth-child(8) .icon_content { right:35%;top:-5px; }
+.newAdjustQuantity_list .log_table_box thead th:nth-child(9) .icon_content { right:35%;top:-5px; }
+.newAdjustQuantity_list table{width:100%;border:1px #dbdbdb solid;}
+.newAdjustQuantity_list table thead tr{ height:30px;width:100%; background:#dbdbdb; }
+.newAdjustQuantity_list table thead th { text-align:center;font-size:12px; }
+.newAdjustQuantity_list table thead th:last-child{ width:120px; }
+.newAdjustQuantity_list table thead input { margin:0 !important; }
+.newAdjustQuantity_list table tbody tr{ height:30px; }
+.newAdjustQuantity_list table tbody td{ text-align:center;font-size:12px;position:relative; }
+.newAdjustQuantity_list table tbody td:last-child{ width:120px; }
+.newAdjustQuantity_list table tbody td .transferQty_content { width:120px;height:24px;line-height:24px; }
+.newAdjustQuantity_list table tbody td .transferQty_content a{ float:left;width:24px;height:24px;display:inline-block;line-height:24px;font-size:14px;border:1px solid #dbdbdb; }
+.newAdjustQuantity_list table tbody td .transferQty_content input{ float:left;width:90px;height:24px;margin-left:14px;line-height:24px;border-left:none;border-right:none;border:1px solid #dbdbdb;/* border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb; */text-align:center; }
+.newAdjustQuantity_list table tbody tr{border-bottom: 1px solid #eee;}
+.newAdjustQuantity_list table tbody tr:last-child{border-bottom: none;}
+.newAdjustQuantity_list table tbody tr:hover{background:#e9e9e9;}
+.newAdjustQuantity_list table tbody tr .comments{ width:100px;overflow: hidden;white-space:nowrap; text-overflow:ellipsis;display:inline-block; } 
+.newAdjustQuantity_list table tbody tr .commentsTextarea{ position:absolute;top:0;left:0;;width:132px; display:none;z-index: 99999;resize:none;border: 1px solid #dbdbdb; }
+.newAdjustQuantity_list table tbody tr .operate{display:none;}
+.newAdjustQuantity_list table tbody tr .tbody_tips_content{position:relative;z-index: 9999;text-align:left;}
+.newAdjustQuantity_list table tbody tr .tbody_edit{width:100px;border:1px solid #dbdbdb;}
+.newAdjustQuantity_list table tbody tr .tbody_tips{position:absolute;right:-4px;top:-22px;display:inline-block;width:20px;height:23px;vertical-align: bottom;background:url(/commondefine_img/warehouse/adjust_icons.png) no-repeat;background-position:1px -17px;background-size: 40px 40px;}
+.newAdjustQuantity_list table tbody tr .tbody_tips::before{position:absolute;right:0px;bottom:15px;content:"";width:20px;height:20px;}
+.newAdjustQuantity_list table tbody tr .tips_content{position:absolute;left:29px;bottom:29px;width:190px;padding:5px;height:auto;display:none;background-color: #D3D3D3;border-radius:4px;transform-origin:center bottom 0px;}
+.newAdjustQuantity_list table tbody tr .tips_arrow{position:absolute;left:48px;bottom:-10px;;display:block;width:0;height:0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 10px solid #D7D7D7;}
+.newAdjustQuantity_list table tbody tr .tbody_log{color:#2C9FD1;}
+.newAdjustQuantity_list .adjust_apply{padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;margin-left:20px; }
+.newAdjustQuantity_list .footer_page{ height:30px;width:100%;margin-top:10px; }
+.newAdjustQuantity_list .footer_total{ float:left;height:30px;line-height:30px; }
+.newAdjustQuantity_list .operator_list{ width:100%;height:30px;}
+.newAdjustQuantity_list .operator_list a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;}
+.newAdjustQuantity_list .footer_page .sent_total_size,
+.newAdjustQuantity_list .footer_page .receive_total_size,
+.newAdjustQuantity_list .footer_page .transferInventory_total_size{ font-style:normal }
+.newAdjustQuantity_list .sent_page,
+.newAdjustQuantity_list .receive_page,
+.newAdjustQuantity_list .transferInventory_page{ margin-top:10px;} 
+.newAdjustQuantity_list .paging{float:right;}
+.newAdjustQuantity_list .paging li{float:left;width:30px;height:30px;line-height:30px;text-align: center}
+.newAdjustQuantity_list .goPage input{width:35px;height:25px;line-height:25px;padding-left:5px !important;border:1px solid #dbdbdb;background-color:#F7F7F7;margin-left:5px !important;}
+.newAdjustQuantity_list .goPage a{font-size:12px;}
+.newAdjustQuantity_list .goPage{float:right;line-height:30px;margin-left: 10px;font-size: 12px;}
+.newAdjustQuantity_list .page_home{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-8px -123px;}
+.newAdjustQuantity_list .page_prev{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-31px -123px;}
+.newAdjustQuantity_list .page_next{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-96px -123px;}
+.newAdjustQuantity_list .page_final{display:inline-block;width:20px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;background-position:-117px -123px;}
+.newAdjustQuantity_list .sent_page .active,
+.newAdjustQuantity_list .receive_page .active,
+.newAdjustQuantity_list .transferInventory_page .active{background-color:#1FBCD2;border-radius:5px;}
+.newAdjustQuantity_list .sent_page .active a,
+.newAdjustQuantity_list .receive_page .active a,
+.newAdjustQuantity_list .transferInventory_page .active a{color:#fff;}
+.newAdjustQuantity_list .hide_enter_qty { display : none; }
+.transferInventory_warehouse { width:100%;height:30px; }
+.transferInventory_warehouse .transferInventory_warehouse_item { float:left;margin-right:20px;height:30px;}
+.transferInventory_warehouse .transferInventory_warehouse_span{ float:left;height:30px;line-height:30px;padding-right:10px; }
+.transferInventory_warehouse .transferInventory_warehouse_item select{ float:left;width:200px;height:30px;line-height:30px; }
+.transferInventory_warehouse a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:28px;line-height:28px; }
+.right_list .transferListTabContent { width:100%;margin-bottom:10px;border:1px solid #dbdbdb; }
+.right_list .transferListTabContent .warehouseHead{ height:30px;padding-left:10px;}
+.right_list .transferListTabContent .warehouseName{ height:30px;line-height:30px;float:left; }
+.right_list .transferListTabContent .warehouseIcon{ float:right;width:20px;height:20px;background: url("/commondefine_img/create_product/delete.png") no-repeat center center;cursor: pointer;border-left:1px solid #dbdbdb;;border-bottom:1px solid #dbdbdb; }
+.right_list .transferListTabContent .warehouseContent{ width:100%; }
+.right_list .transferListTabContent .warehouseContent table{width:100%;}
+.right_list .transferListTabContent .warehouseContent table thead tr{ height:30px;width:100%; background:#dbdbdb; }
+.right_list .transferListTabContent .warehouseContent table thead th { text-align:center;font-size:12px; }
+.right_list .transferListTabContent .warehouseContent table tbody tr{ height:30px; border-bottom:1px solid #dbdbdb;}
+.right_list .transferListTabContent .warehouseContent table tbody td{ text-align:center;font-size:12px; }
+.right_list .transferListTabContent .warehouseContent table tbody td .list_icon{ width:12px;height:12px;background: url("/commondefine_img/create_product/delete.png") no-repeat center center;cursor: pointer;float:right;margin-right:5px; }
+.right_list .transferListTabContent .footerIndex { width:100%;height:30px; }
+.right_list .transferListTabContent .footerIndex span{ float:right;width:30px;height:30px;line-height:30px;display:block;background:#1FBCD2;font-size:14px;text-align:center;color:#fff; }
+.right_list .right_list_operator { width:100%; height:30px;margin-bottom:10px; }
+.right_list .right_list_operator a{ padding:0 15px; font-size:12px;display:inline-block;color:#fff;background:#1FBCD2;height:30px;line-height:30px;margin-right:15px; }
+.newAdjustQuantity_list .operator_list a.no_checked,
+.right_list .right_list_operator a.no_checked{ background:#eeeeee;color:#424242; }
+
+.select2-selection.select2-selection--single{ border:1px solid #dbdbdb;border-radius:0; }
+
+
+
+#findContent .search_btn{margin-bottom:10px;}
+#findContent .search_btn a{display:inline-block;width:100px;height:30px;line-height:30px;background-color:#1FBCD2;text-align:center;color:#fff;}
+#findContent .product_search,
+#findContent .member_search{margin-bottom:14px;}
+#findContent .inventory_item_name,
+#findContent .member_search_span{display:inline-block;width:96px;text-align:right;margin-right: 4px;color: #424242;}
+#findContent .product_select{height:30px;background-color: #c0c0c0;border:none;}
+#findContent .search_input{width:125px;height:30px;border:1px solid #dbdbdb;padding-left:5px !important;}
+#findContent .product_select_any{height:30px;width:120px;margin-right: 14px !important;}
+#findContent .product_select_type{height:30px;width:217px;border:1px solid #dbdbdb;}
+#findContent .product_btn,#find_lot .lot_btn,#lot_details .lot_btn,#create_lot .lot_btn{text-align:left;margin-bottom:30px;}
+#findContent .product_btn a,#find_lot .lot_btn a,#create_lot .lot_btn a,#lot_details .lot_btn a{display:inline-block;text-align:center;width:100px;height:30px;line-height:30px;background:#1FBCD2;color:#fff;font-size:12px;}
+#findContent .search_info_table{ width: 100%;border: 1px #dbdbdb solid; margin-bottom: 40px;}
+#findContent .search_info_table tr{ height: 30px;width: 100%; }
+#findContent .search_info_table thead tr{ background: #c9c9c9; height: 36px;}
+#findContent .search_info_table thead a{ color:#333;}
+#findContent .search_info_table tbody{background-color:#f7f7f7;}
+#findContent .search_info_table tbody tr{ border-bottom: 1px solid #eee; height: 40px;}
+#findContent .search_info_table tbody tr:hover{background-color:#e9e9e9;}
+#findContent .search_info_table tr:last-child{ border-bottom: none; }
+#findContent .search_info_table tr th{ height: 30px;line-height: 30px;font-size: 12px;font-weight:normal;text-align: center; }
+#findContent .search_info_table tr th:first-child{ padding-left: 30px;text-align: center; }
+#findContent .search_info_table tr td:first-child{ padding-left: 30px;text-align: center; }
+#findContent .search_info_table tr td{ height: 30px;line-height: 30px;font-size: 12px;text-align: center; }
+#findContent .search_info_table .table_btn{display: inline-block;width: 55px;height: 20px;line-height: 20px;color: #1FBCD2;text-align:center;}
+#findContent .search_info_table .table_btn:hover{text-decoration: underline !important;}
+#findContent .product_checkbox{width:30px;height:30px;background:url(/commondefine_img/inventory_item/item_icon.png) no-repeat;display: inline-block;vertical-align: top;}
+#findContent .product_checkbox.selected{background-position:1px -46px;}
+#findContent .product_checkbox.noselected{background-position:-26px -46px;}

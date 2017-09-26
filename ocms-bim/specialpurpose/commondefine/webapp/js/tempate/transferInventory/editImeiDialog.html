@@ -1,0 +1,39 @@
+<script type="text/html" id="editImeiDialogColumn">
+<div id="editImeiDialog">
+	<div class="imeiTitle" data-trackingId="{{trackingId}}" data-productId="{{productId}}">
+		<span class="titleContent">Scan IMEI of </span><span class="modelName">{{currentModel}}</span>
+	</div>
+	<div class="imeiContent">
+		<span class="inputTitle">Input IMEI</span>
+		<input type="text" class="enterImeiInput" />
+	</div>
+	<div class="errorMessageList"></div>
+	<div class="imeiLoadingContent">
+		<span class="imeiLoadingBg"></span>
+		<span class="imeiLoadingIcon"></span>	
+	</div>
+	<div class="currentContent">
+	</div>
+	<div class="imeiOperation">
+		<span class="totalImei">Count: <em class="currentItems">0</em> pcs</span>
+		<span class="operatorImei">
+			<a href="javascript:void(0);" class="clearAllBtn">Clear All</a>
+			<a href="javascript:void(0);" class="saveBtn">Save</a>
+		</span>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+   
+</script>
+<script type="text/html" id="imeiCodeColumn">		      
+{{if result && result.length > 0}}
+	{{each result as value i}}
+        <div class="imeiGroup">
+           <div class="imeiNumber">{{value.imei}}<input type="hidden" class="imeiNumberInput" value="{{value.imei}}"/></div>
+           <span class="imeiClose"></span>
+        </div>
+	{{/each}}
+{{/if}}	
+</script>
+
+

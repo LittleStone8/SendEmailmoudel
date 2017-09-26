@@ -1,0 +1,130 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+/* This file has been modified by Open Source Strategies, Inc. */
+
+
+import javolution.util.FastMap;
+import javolution.util.FastList;
+import javolution.util.FastMap;
+import org.ofbiz.base.util.*;
+import org.ofbiz.entity.util.EntityUtil;
+import org.ofbiz.party.party.PartyHelper;
+import org.opentaps.domain.DomainsDirectory;
+import org.opentaps.domain.DomainsLoader;
+import org.opentaps.domain.order.Order;
+import org.opentaps.domain.order.OrderRepositoryInterface;
+import org.opentaps.domain.party.Party;
+import org.opentaps.foundation.infrastructure.Infrastructure;
+import org.opentaps.foundation.infrastructure.User;
+import org.opentaps.warehouse.WarehouseHelper;
+
+orderId = parameters.get("orderId");
+if (orderId == null) return;
+
+DomainsLoader domainLoader = new DomainsLoader(new Infrastructure(dispatcher), new User(userLogin));
+DomainsDirectory dd = domainLoader.loadDomainsDirectory();
+OrderRepositoryInterface orderRepository = dd.getOrderDomain().getOrderRepository();
+Order order = orderRepository.getOrderById(orderId);
+
+
+
+         session = request.getSession();
+         timeZonestring = userLogin.getString("lastTimeZone");
+         if(timeZonestring==null)
+         		timeZonestring="Africa/Accra";
+      timeZone= TimeZone.getTimeZone(timeZonestring);
+      if(timeZone!=null)
+      {
+         df=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+       	 df.setTimeZone(timeZone);
+         d = df.format(order.orderDate);
+         context.put("orderDate", d);
+        }
+         else 
+         {
+         context.put("orderDate", order.orderDate);
+         }
+
+
+
+
+Party customer = order.getPlacingCustomer();
+System.out.println(order);
+OrderHeaderr=delegator.findByPrimaryKey("OrderHeader", UtilMisc.toMap("orderId", order.orderId));
+System.out.println("+++"+OrderHeaderr);
+ProductStoretemp=delegator.findByPrimaryKey("ProductStore", UtilMisc.toMap("productStoreId", order.productStoreId));
+System.out.println(ProductStoretemp);
+facilityyy=delegator.findByPrimaryKey("Facility", UtilMisc.toMap("facilityId", ProductStoretemp.getString("inventoryFacilityId")));
+System.out.println(facilityyy);
+
+company=delegator.findByPrimaryKey("PartyGroup", UtilMisc.toMap("partyId", facilityyy.getString("ownerPartyId")));
+System.out.println(company);
+saleperson=delegator.findByPrimaryKey("Person", UtilMisc.toMap("partyId", OrderHeaderr.getString("salesId")));
+buyerperson=delegator.findByPrimaryKey("Person", UtilMisc.toMap("partyId", OrderHeaderr.getString("buyerId")));
+System.out.println(saleperson);
+System.out.println(buyerperson);
+
+findMap = UtilMisc.toMap("orderId", order.orderId);
+productlist = delegator.findByAnd("OrderItem", findMap);
+System.out.println("333"+productlist);
+gen=null;
+total=0;
+for(i=0;i<productlist.size();i++)
+{
+	unitPrice=productlist.get(i).getString("unitPrice");
+	currentPrice=productlist.get(i).getString("currentPrice");
+	doubleunitPrice=Double.valueOf(unitPrice);
+	doublecurrentPrice=Double.valueOf(unitPrice);
+	
+	adjustmentprict=doublecurrentPrice-doubleunitPrice;
+	productlist.get(i).set("unitRecurringPrice", adjustmentprict);
+	total+=doubleunitPrice;
+}
+findMap2 = UtilMisc.toMap("orderId", order.orderId);
+OrderPayments = delegator.findByAnd("OrderPaymentPreference", findMap2);
+
+CASHpay=0;
+cardpay=0;
+for(i=0;i<OrderPayments.size();i++)
+{
+	System.out.println("+++++11111111"+OrderPayments.get(i));
+	paymentMethodTypeId=OrderPayments.get(i).getString("paymentMethodTypeId");
+	maxAmount=OrderPayments.get(i).getString("maxAmount");
+	if("CASH".equals(paymentMethodTypeId))
+	{
+		CASHpay+=Double.valueOf(maxAmount);
+	}
+	if("CREDIT".equals(paymentMethodTypeId))
+	{
+		cardpay+=Double.valueOf(maxAmount);
+	} 
+}
+System.out.println("2222+++++++++++++++++++"+OrderHeaderr);
+
+context.put("OrderHeaderr", OrderHeaderr);
+context.put("ProductStoretemp", ProductStoretemp);
+context.put("facilityyy", facilityyy);
+context.put("company", company);
+context.put("saleperson", saleperson);
+context.put("buyerperson", buyerperson);
+context.put("productlist", productlist);
+context.put("total", total);
+context.put("CASHpay", CASHpay);
+context.put("cardpay", cardpay);

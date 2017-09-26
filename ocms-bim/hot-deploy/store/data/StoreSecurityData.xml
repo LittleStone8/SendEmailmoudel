@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the Store Component." permissionId="STORE_VIEW"/>
+    <SecurityPermission description="Create operations in the Store Component." permissionId="STORE_CREATE"/>
+    <SecurityPermission description="Update operations in the Store Component." permissionId="STORE_UPDATE"/>
+    <SecurityPermission description="Delete operations in the Store Component." permissionId="STORE_DELETE"/>
+    <SecurityPermission description="ALL operations in the Store Component." permissionId="STORE_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="STORE_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STORE_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STORE_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STORE_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STORE_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="STORE_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="STORE_ADMIN"/>
+</entity-engine-xml>

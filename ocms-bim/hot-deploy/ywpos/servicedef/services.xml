@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+    <description>OrderMgr Services</description>
+    <vendor></vendor>
+    <version>1.0</version>
+
+
+    <service name="loadYiWillCartForUpdate" engine="java" auth="true"
+            location="com.yiwill.pos.services.YiWillLoadCartServices" invoke="loadCartForUpdate">
+        <description>Load an existing shopping cart</description>
+        <attribute name="orderId" type="String" mode="IN" optional="false"/>
+        <attribute name="yiWillCart" type="com.yiwill.pos.shop.YiWillCart" mode="OUT" optional="false"/>
+    </service>
+    
+    
+      <service name="storeYiWillOrder" engine="java" auth="true"
+            location="com.yiwill.pos.services.YiWillStoreCartServices" invoke="saveUpdatedCartToOrder">
+        <description>Update the quantities/prices for an existing order</description>
+        <attribute name="cart" type="com.yiwill.pos.shop.YiWillCart" mode="INOUT" optional="false"/>
+        <!-- <attribute name="locale" type="" mode="IN" optional="false"/> -->
+        <!-- <attribute name="changeMap" type="Map" mode="IN" optional="false"/> -->
+    </service>
+    
+      <service name="yiWillReserveInventory" engine="java" auth="true"
+            location="com.yiwill.pos.services.YiWillStoreCartServices" invoke="reserveInventory">
+        <description>Update the quantities/prices for an existing order</description>
+        <attribute name="cart" type="com.yiwill.pos.shop.YiWillCart" mode="INOUT" optional="false"/>
+    </service>
+    
+    
+   <service name="yiWillReserveStoreInventory" engine="java" auth="true"
+            location="com.yiwill.pos.services.YiWillReserveStoreInventoryServices" invoke="reserveStoreInventory">
+        <description>Reserve Inventory in a Product Store</description>
+        <attribute name="productStoreId" type="String" mode="IN" optional="false"></attribute>
+        <attribute name="status" type="String" mode="IN" optional="false"></attribute>
+        <attribute name="productId" type="String" mode="IN" optional="false"></attribute>
+        <attribute name="quantity" type="BigDecimal" mode="IN" optional="false"></attribute>
+        <attribute name="orderId" type="String" mode="IN" optional="true"></attribute>
+        <attribute name="isNeedShip" type="Boolean" mode="IN" optional="true"></attribute>
+        <attribute name="orderItemSeqId" type="String" mode="IN" optional="true"></attribute>
+        <attribute name="imei" type="String" mode="IN" optional="true"></attribute>
+        <attribute name="quantityNotReserved" type="BigDecimal" mode="OUT" optional="true"></attribute>
+    </service>
+    
+    
+    
+
+</services>

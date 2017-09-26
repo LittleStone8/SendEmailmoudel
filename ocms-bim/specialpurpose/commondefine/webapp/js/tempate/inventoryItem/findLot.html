@@ -1,0 +1,84 @@
+<script type="text/html" id="findLotColumn">
+<span class="right_arrow" style="display:none" data-ids="lotId"></span>
+<div id="findContent">
+ <div id="find_lot">
+ <div class="lot_close"></div>
+<div class="lot_title">find lot Id</div>
+			<div class="lot_search">
+				<span class="inventory_item_name">Lot Id</span>
+				<input type="text" id="lotId" class="lot_input" />				
+			</div>
+			
+            <div  class="lot_btn"><a href="javascript:void(0)">Search</a></div>
+            <div class="lot_info">
+		    <nav aria-label="...">
+		       <ul class="pagination" id="fenye">
+		  
+		       </ul>
+		    </nav>
+			<table class="lot_info_table">
+				<thead>
+					<tr>
+						<th><a href="javascript:searchProduct()">Lot Id</a></th>						
+						<th><a href="javascript:searchProduct()">Created Date</th>
+						<th><a href="javascript:searchProduct()">Expire Date</th>
+					</tr>
+				</thead>
+			
+				<tbody id="tbody">
+					
+				</tbody>
+				
+			</table>
+<div id="tablePager" class="clearfix">
+     
+	</div>
+			</div>
+   		</div>
+</div>
+</script>
+<script type="text/html" id="lotTbodyColumn">
+
+	{{if result.length>0}}
+		{{each result as value i}}
+<tr class="">
+			 <td><a href='javascript:void(0);' class='table_btn'>{{value.lotId}}</a></td>
+		     <td>{{if value.createDate}}{{value.createDate.substring(0,value.createDate.length-2)}}{{/if}}</td>
+			 <td>{{if value.expirationDate}}{{value.expirationDate.substring(0,value.expirationDate.length-2)}}{{/if}}</td>
+</tr>
+		{{/each}}
+	{{/if}}
+{{if result.length==0}}
+        <tr>
+            <td colspan="3">no data</td>
+        </tr>
+    {{/if}}
+			    
+</script>
+<script type="text/html" id="lotPage">
+	{{if totalNum>0}}<div class="goPage"><span>GO</span><input type="text" data-big-num="{{totalPage}}" class="go_page_input"/></div>{{/if}}
+	<ul class="paging clearfix" id="fenye">
+	    {{if totalNum>0}}
+              <li ><a href="javascript:void(0)"  data-type="home" data-num="1" ><span  class="page_home"></span></a></li>
+            
+                 <li ><a href="javascript:void(0)"  data-num="{{pageNum-1}}" ><span  class="page_prev"></span></a></li>
+                
+			
+			{{each nums as value}}
+                {{if value==pageNum}}
+                    <li class='active'><a href="javascript:void(0)" data-num="{{value}}" >{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+                {{if value!=pageNum}}
+                    <li ><a href="javascript:void(0)" data-num="{{value}}">{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+            {{/each}}
+           
+           <li ><a href="javascript:void(0)"  data-num="{{pageNum+1}}"><span  class="page_next"></span></a></li>
+           
+          <li ><a href="javascript:void(0)" data-type="final"  data-num="{{totalPage}}"><span  class="page_final"></span></a></li>
+		  
+{{/if}}
+	</ul>
+	
+</script>
+

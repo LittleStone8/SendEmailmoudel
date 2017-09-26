@@ -1,0 +1,137 @@
+<script type="text/html" id="findProductColumn">
+<span class="right_arrow" data-ids="productId"></span>
+       <div id="findContent">
+           <div id="find_product">
+    <div class="product_title">Product Quick Search</div>
+<div class="product_content clearfix">
+<form id="productForm">
+	<div  class="product_search">
+		<span class="inventory_item_name">Model</span>
+		<select id="internalNameNum" class="product_select">
+			<option value="1" >Contain</option>
+			<option value="2">Beginning</option>
+			<option value="3">Equal</option>
+		</select><input type="text" id="internalName" class="product_input">
+		<span class="product_checkbox selected"></span><input style="display:none;"  checked="checked" type="checkbox" class="checklist" id="internalNameStatu" >
+		<span>Ignore Case</span>
+	</div>
+	
+	<div class="product_more" style="display:none;">
+	<div class="product_search">
+		<span class="inventory_item_name">Product Id</span>
+		<select id="productIdNum" class="product_select">
+			<option value="1">Contain</option>
+			<option value="2">Beginning</option>
+			<option value="3">Equal</option>
+		</select><input type="text" id="productId" class="product_input" value="" />
+		<span class="product_checkbox selected"></span><input style="display:none;" type="checkbox" checked="checked"   class="checklist" id="productIdStatu" />
+		<span>Ignore Case</span>		
+	</div>
+        <div  class="product_search">
+		<span class="inventory_item_name">Brand Name</span>
+		<select id="brandNameNum" class="product_select">
+			<option value="1" >Contain</option>
+			<option value="2">Beginning</option>
+			<option value="3">Equal</option>
+		</select><input type="text" id="brandName" class="product_input" value="">
+		<span class="product_checkbox selected"></span><input style="display:none;" checked="checked" type="checkbox" class="checklist" id="brandNameStatu" >
+		<span>Ignore Case</span>
+	</div>
+	
+	</div>
+	
+	
+</form>
+<div class="product_search_more"><span class="more_arrow more_down"></span><span class="more_text">more</span></div>
+
+	<div  class="product_btn"><a href="javascript:void(0)">Search</a></div>
+</div>
+	<div class="product_info">
+
+		
+	
+	<table class="product_info_table">
+		<thead>
+			<tr>
+				<th><a href="javascript:void()">Description</a></th>
+				<th><a href="javascript:void()">Product ID</th>				
+			</tr>
+		</thead>
+	
+		<tbody id="tbody">
+		    
+			
+		</tbody>
+        
+	</table>
+	<div id="tablePager" class="clearfix">
+     
+	</div>
+	</div>
+	</div>
+
+	   </div>
+	
+</script>
+<!--<script type="text/html" id="productTypeColumn">
+{{if result}}
+      {{each result as value i}}
+         <option value="{{value}}" {{if value=='FINISHED_GOOD'}}selected{{/if}}>{{value}}</option>
+      {{/each}}
+   {{/if}}
+</script>
+  -->
+<script type="text/html" id="productTbodyColumn">
+
+	{{if result.length>0}}
+		{{each result as value i}}
+			<tr class="select_productId" data-productId="{{value.productId}}">
+                  <td class="product_desc">{{value.brandName}} {{if value.internalName}}|{{/if}} {{value.internalName}} {{if value.productAttributes}}|{{/if}} {{value.productAttributes}}</td>            
+						 <td><a href='javascript:void(0);' class='table_btn'>{{value.productId}}</a></td>
+			 </tr>
+		{{/each}}
+	{{/if}}
+{{if result.length==0}}
+        <tr>
+            <td colspan="2">no data</td>
+        </tr>
+    {{/if}}
+			    
+</script>
+<script type="text/html" id="productTypeColumn">
+   {{if datas}}
+      {{each datas as value i}}
+         <option value="{{value.productTypeId}}">{{value.productType}}</option>
+      {{/each}}
+   {{/if}}
+</script>
+<script type="text/html" id="productPage">
+	{{if totalNum>0}}<div class="goPage"><span>GO</span><input type="text" data-big-num="{{totalPage}}" class="go_page_input"/></div>{{/if}}
+	<ul class="paging clearfix" id="fenye">
+	    {{if totalNum>0}}
+              <li ><a href="javascript:void(0)"  data-type="home" data-num="1" ><span  class="page_home"></span></a></li>
+            
+                 <li ><a href="javascript:void(0)"  data-num="{{pageNum-1}}" ><span  class="page_prev"></span></a></li>
+                
+			
+			{{each nums as value}}
+                {{if value==pageNum}}
+                    <li class='active'><a href="javascript:void(0)" data-num="{{value}}" >{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+                {{if value!=pageNum}}
+                    <li ><a href="javascript:void(0)" data-num="{{value}}">{{value}} <span class='sr-only'>{{value}}</span></a></li>
+                {{/if}}
+            {{/each}}
+           
+           <li ><a href="javascript:void(0)"  data-num="{{pageNum+1}}"><span  class="page_next"></span></a></li>
+           
+          <li ><a href="javascript:void(0)" data-type="final"  data-num="{{totalPage}}"><span  class="page_final"></span></a></li>
+		  
+{{/if}}
+	</ul>
+    
+	
+</script>
+  
+  
+  
